@@ -18,8 +18,11 @@ const ProfileBoard = ({ profiles = [] }) => {
   });
   const [openDropdown, setOpenDropdown] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [pageRangeStart, setPageRangeStart] = useState(1);
 
   const profileData = profiles;
+  const totalPages = Math.ceil(profileData.length / profilesPerPage);
+  const visiblePageCount = 4; // Número de páginas visibles en la paginación
 
   const handleDropdownToggle = (dropdownName) => {
     setOpenDropdown(openDropdown === dropdownName ? null : dropdownName);
@@ -41,21 +44,44 @@ const ProfileBoard = ({ profiles = [] }) => {
   };
 
   // Paginación
-  const totalPages = Math.ceil(profileData.length / profilesPerPage);
   const indexOfLastProfile = currentPage * profilesPerPage;
   const indexOfFirstProfile = indexOfLastProfile - profilesPerPage;
   const currentProfiles = profileData.slice(indexOfFirstProfile, indexOfLastProfile);
 
-  // Calcular el rango de páginas a mostrar
-  let startPage = Math.max(1, currentPage - 1);
-  let endPage = Math.min(totalPages, startPage + 3);
-  if (endPage - startPage < 3) {
-    startPage = Math.max(1, endPage - 3);
-  }
-  const visiblePages = [];
-  for (let i = startPage; i <= endPage; i++) {
-    visiblePages.push(i);
-  }
+  // Calcular páginas visibles
+  const getVisiblePages = () => {
+    let startPage = pageRangeStart;
+    let endPage = Math.min(startPage + visiblePageCount - 1, totalPages);
+
+    // Ajustar si estamos cerca del final
+    if (endPage === totalPages && totalPages > visiblePageCount) {
+      startPage = Math.max(1, totalPages - visiblePageCount + 1);
+    }
+
+    const pages = [];
+    for (let i = startPage; i <= endPage; i++) {
+      pages.push(i);
+    }
+    return pages;
+  };
+
+  const visiblePages = getVisiblePages();
+
+  const handlePageChange = (pageNum) => {
+    setCurrentPage(pageNum);
+  };
+
+  const handleNextPages = () => {
+    if (pageRangeStart + visiblePageCount <= totalPages) {
+      setPageRangeStart(pageRangeStart + 1);
+    }
+  };
+
+  const handlePrevPages = () => {
+    if (pageRangeStart > 1) {
+      setPageRangeStart(pageRangeStart - 1);
+    }
+  };
 
   // Iconos SVG
   const PaperIcon = () => (
@@ -70,8 +96,6 @@ const ProfileBoard = ({ profiles = [] }) => {
   const RightArrow = () => (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.9902 7.00004C10.9902 7.25095 10.8944 7.50182 10.7032 7.69312L4.68341 13.7128C4.30048 14.0957 3.67962 14.0957 3.29685 13.7128C2.91407 13.33 2.91407 12.7093 3.29685 12.3263L8.62345 7.00004L3.29703 1.67371C2.91426 1.29078 2.91426 0.670114 3.29703 0.287369C3.67981 -0.0957479 4.30066 -0.0957479 4.6836 0.287369L10.7033 6.30696C10.8946 6.49835 10.9902 6.74922 10.9902 7.00004Z" fill="black"/></svg>
   );
-
-  console.log('currentProfiles:', currentProfiles);
 
   return (
     <div className="profile-board">
@@ -125,7 +149,10 @@ const ProfileBoard = ({ profiles = [] }) => {
         <div className="pagination-section">
           <button
             className="pagination-arrow"
-            onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+            onClick={() => {
+              handlePrevPages();
+              setCurrentPage(Math.max(1, currentPage - 1));
+            }}
             disabled={currentPage === 1}
           >
             <LeftArrow />
@@ -135,7 +162,7 @@ const ProfileBoard = ({ profiles = [] }) => {
               <div
                 key={pageNum}
                 className={`page-number ${pageNum === currentPage ? 'active' : ''}`}
-                onClick={() => setCurrentPage(pageNum)}
+                onClick={() => handlePageChange(pageNum)}
               >
                 {pageNum === currentPage ? (
                   <div className="page-circle">
@@ -149,7 +176,10 @@ const ProfileBoard = ({ profiles = [] }) => {
           </div>
           <button
             className="pagination-arrow"
-            onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+            onClick={() => {
+              handleNextPages();
+              setCurrentPage(Math.min(totalPages, currentPage + 1));
+            }}
             disabled={currentPage === totalPages}
           >
             <RightArrow />
