@@ -249,56 +249,54 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  margin-top: 38px;
+  gap: 32px;
+  margin-top: 32px;
 }
 
 .pagination-arrow {
-  width: 14px;
-  height: 14px;
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.pagination-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .pagination-numbers {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 
 .page-number {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.page-number span {
-  color: #000;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.page-circle {
+.page-number.active .page-circle {
+  background: #4B684B;
+  color: #fff;
+  border-radius: 50%;
   width: 25px;
   height: 25px;
-  border-radius: 12.5px;
-  background: #396541;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 400;
 }
 
 .page-circle span {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
+}
+
+.page-number:not(.active) span {
+  color: #111;
 }
 
 /* Responsive adjustments */

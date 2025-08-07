@@ -1,34 +1,66 @@
+import React, { useEffect, useState } from 'react';
 import ProfileBoard from './components/ProfileBoard';
-import { profiles } from './data/profiles';
+
+// Función para calcular el riesgo según los datos del perfil
+function calcularRiesgo(profile) {
+  // Aquí debes definir tu lógica real según los datos del perfil.
+  // Ejemplo usando un campo ficticio profile.riesgo (ajusta según tus datos reales):
+
+  // Puedes cambiar esta lógica por la que necesites
+  if (profile.riesgo === 'alto') {
+    return {
+      riskLevel: 'Riesgo alto',
+      riskColor: '#E93838', // rojo
+      progressWidth: '100%'
+    };
+  }
+  if (profile.riesgo === 'medio') {
+    return {
+      riskLevel: 'Riesgo medio',
+      riskColor: '#FFA600', // naranja
+      progressWidth: '75%'
+    };
+  }
+  if (profile.riesgo === 'bajo') {
+    return {
+      riskLevel: 'Riesgo bajo',
+      riskColor: '#FFD61E', // amarillo
+      progressWidth: '50%'
+    };
+  }
+  // Sin riesgo
+  return {
+    riskLevel: 'Sin riesgo',
+    riskColor: '#82B310', // verde
+    progressWidth: '20%'
+  };
+}
 
 function App() {
-  // Transform profiles data for the new design
-  const avatarUrls = [
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=84&h=84&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=84&h=84&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=84&h=84&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=84&h=84&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=84&h=84&fit=crop&crop=face"
-  ];
+  const [profiles, setProfiles] = useState([]);
 
-  const transformedProfiles = profiles.map((profile, index) => ({
-    id: profile.id,
-    name: profile.name,
-    position: profile.position,
-    party: profile.party,
-    riskLevel: profile.risk ? `Riesgo ${profile.risk}` : 'Sin delitos cometidos',
-    riskColor: profile.risk === 'alto' ? '#E93838' :
-               profile.risk === 'medio' ? '#FFA600' :
-               profile.risk === 'bajo' ? '#FFD61E' : '#82B310',
-    progressWidth: profile.risk === 'alto' ? '100%' :
-                   profile.risk === 'medio' ? '75%' :
-                   profile.risk === 'bajo' ? '50%' : '25%',
-    avatar: avatarUrls[index % avatarUrls.length]
-  }));
+  useEffect(() => {
+    fetch('/web-amazonia/perfiles.json')
+      .then(response => response.json())
+      .then(data => {
+        const transformed = data.map(profile => {
+          const riesgo = calcularRiesgo(profile);
+          return {
+            dni: profile.dni,
+            name: profile["nombres y apellidos del alcalde"],
+            position: profile.cargo,
+            party: profile["partido político postulado"],
+            ...riesgo,
+            avatar: profile.avatar
+          };
+        });
+        setProfiles(transformed);
+      });
+  }, []);
 
   return (
     <div className="app">
-      <ProfileBoard profiles={transformedProfiles} />
+      <ProfileBoard profiles={profiles} />
     </div>
   );
 }
