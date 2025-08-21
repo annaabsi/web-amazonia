@@ -1,0 +1,242 @@
+/* Candidate Profile Page Styles */
+.candidate-profile-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  color: #333;
+  background: #FAFAF8;
+  min-height: 100vh;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  background: #396541;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background: #2d5235;
+}
+
+.candidate-profile-card {
+  background: #FFFEFC;
+  border-radius: 12px;
+  border: 1px solid #BFC5B7;
+  padding: 30px;
+  box-shadow: 0 4px 10.8px -5px rgba(0, 0, 0, 0.25);
+}
+
+.candidate-main-info {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E9E9E8;
+}
+
+/* Foto cuadrada con bordes redondeados */
+.candidate-avatar-large img {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px; /* Bordes redondeados en lugar de circular */
+  object-fit: cover;
+  border: 2px solid #f0f0f0;
+}
+
+.candidate-basic-info h1 {
+  color: #396541;
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.candidate-position {
+  color: #000;
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+}
+
+.candidate-location-party {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.location, .party {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 15px;
+}
+
+/* Barra de riesgo idéntica a la vista general */
+.profile-risk-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.risk-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.risk-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+
+.risk-text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile-progress {
+  width: 144px;
+  margin: 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 7px;
+  background: #E9E9E8;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 7px;
+  transition: width 0.3s ease;
+}
+
+.candidate-details-section h2 {
+  color: #396541;
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.mining-table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+  border: 1px solid #E9E9E8;
+  border-radius: 8px;
+}
+
+.mining-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mining-table th {
+  background: #F5F5F5;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #396541;
+  border-bottom: 1px solid #E9E9E8;
+}
+
+.mining-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #E9E9E8;
+}
+
+.mining-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mining-table tr:nth-child(even) {
+  background: #FAFAFA;
+}
+
+.legal-summary {
+  background: #F9F9F9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #396541;
+}
+
+.legal-summary p {
+  margin: 0;
+  font-style: italic;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .candidate-profile-page {
+    padding: 15px;
+  }
+  
+  .candidate-profile-card {
+    padding: 20px;
+  }
+  
+  .candidate-main-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .candidate-basic-info {
+    text-align: center;
+  }
+  
+  .candidate-location-party {
+    align-items: center;
+  }
+  
+  .profile-risk-container {
+    align-items: center;
+  }
+  
+  .mining-table {
+    font-size: 14px;
+  }
+  
+  .mining-table th,
+  .mining-table td {
+    padding: 8px 10px;
+  }
+}
+
+.candidate-loading,
+.candidate-not-found {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+}
+
+.candidate-not-found a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #396541;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.candidate-not-found a:hover {
+  text-decoration: underline;
+}

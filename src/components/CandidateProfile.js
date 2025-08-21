@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import './CandidateProfile.css';
 
 // Función para convertir un nombre a formato URL (minúsculas con guiones)
 function formatNameForURL(name) {
@@ -9,6 +10,48 @@ function formatNameForURL(name) {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/\s+/g, '-')
     .replace(/[^a-z0-9-]/g, '');
+}
+
+// Función para obtener los datos de riesgo según la categoría del perfil (igual que en App.js)
+function obtenerDatosRiesgo(categoria) {
+  const mapeoRiesgo = {
+    "Ningún delito": {
+      riskLevel: 'Ningún delito',
+      riskColor: '#00B050',
+      progressWidth: '0%'
+    },
+    "1 a 3 delitos": {
+      riskLevel: '1 a 3 delitos',
+      riskColor: '#92D050',
+      progressWidth: '20%'
+    },
+    "4 a 5 delitos": {
+      riskLevel: '4 a 5 delitos',
+      riskColor: '#FFFF00',
+      progressWidth: '40%'
+    },
+    "6 a 9 delitos": {
+      riskLevel: '6 a 9 delitos',
+      riskColor: '#FFC000',
+      progressWidth: '60%'
+    },
+    "10 a 20 delitos": {
+      riskLevel: '10 a 20 delitos',
+      riskColor: '#FF5050',
+      progressWidth: '80%'
+    },
+    "21 o más delitos": {
+      riskLevel: '21 o más delitos',
+      riskColor: '#C00000',
+      progressWidth: '100%'
+    }
+  };
+  
+  return mapeoRiesgo[categoria] || {
+    riskLevel: categoria || 'Datos no disponibles',
+    riskColor: '#CCCCCC',
+    progressWidth: '10%'
+  };
 }
 
 function CandidateProfile() {
@@ -45,64 +88,128 @@ function CandidateProfile() {
     return (
       <div className="candidate-not-found">
         <h2>Candidato no encontrado</h2>
-        <Link to="/">Volver al listado</Link>
+        <Link to="/" className="back-button">← Volver al listado</Link>
       </div>
     );
   }
 
-  // Obtener datos de riesgo según la categoría
-  const getRiskData = (categoria) => {
-    const riskMap = {
-      "Ningún delito": { color: '#00B050', level: 'Ningún delito' },
-      "1 a 3 delitos": { color: '#92D050', level: '1 a 3 delitos' },
-      "4 a 5 delitos": { color: '#FFFF00', level: '4 a 5 delitos' },
-      "6 a 9 delitos": { color: '#FFC000', level: '6 a 9 delitos' },
-      "10 a 20 delitos": { color: '#FF5050', level: '10 a 20 delitos' },
-      "21 o más delitos": { color: '#C00000', level: '21 o más delitos' }
-    };
-    
-    return riskMap[categoria] || { color: '#CCCCCC', level: 'Datos no disponibles' };
-  };
-
-  const riskData = getRiskData(candidate.categoría);
+  const riskData = obtenerDatosRiesgo(candidate.categoría);
   const avatarSrc = candidate.dni
     ? `/web-amazonia/imagenes-bn/${candidate.dni}.jpg`
     : candidate.avatar || '/web-amazonia/imagenes-bn/default.jpg';
 
   return (
-    <div className="candidate-profile">
+    <div className="candidate-profile-page">
       <div className="profile-header">
         <Link to="/" className="back-button">← Volver al listado</Link>
-        <h1>Perfil del Candidato</h1>
       </div>
       
-      <div className="candidate-details">
-        <div className="candidate-main">
-          <div className="candidate-avatar">
+      <div className="candidate-profile-card">
+        <div className="candidate-main-info">
+          <div className="candidate-avatar-large">
             <img src={avatarSrc} alt={candidate["nombres y apellidos del alcalde"]} />
           </div>
           
-          <div className="candidate-info">
-            <h2>{candidate["nombres y apellidos del alcalde"]}</h2>
-            <p><strong>Cargo:</strong> {candidate.cargo}</p>
-            <p><strong>Partido Político:</strong> {candidate["partido político postulado"]}</p>
-            <p><strong>DNI:</strong> {candidate.dni}</p>
+          <div className="candidate-basic-info">
+            <h1>{candidate["nombres y apellidos del alcalde"]}</h1>
+            <p className="candidate-position">{candidate.cargo}</p>
             
-            <div className="risk-display" style={{ borderLeftColor: riskData.color }}>
-              <div className="risk-badge" style={{ backgroundColor: riskData.color }}>
-                {riskData.level}
+            <div className="candidate-location-party">
+              <span className="location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                {candidate.distrito && candidate.provincia && candidate.departamento 
+                    ? `${candidate.distrito} - ${candidate.provincia} - ${candidate.departamento}`
+                    : candidate.distrito || candidate.provincia || candidate.departamento || 'Ubicación no disponible'
+                }
+              </span>
+              <span className="party">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+                {candidate["partido político postulado"] || 'Partido Esperanza Amazónica'}
+              </span>
+            </div>
+            
+            <div className="profile-risk-container">
+              <div className="risk-info">
+                <div
+                  className="risk-indicator"
+                  style={{ backgroundColor: riskData.riskColor }}
+                ></div>
+                <span className="risk-text">{riskData.riskLevel}</span>
               </div>
-              <p><strong>Número de delitos:</strong> {candidate["número de delitos"]}</p>
+              <div className="profile-progress">
+                <div className="progress-bar">
+                  <div
+                    className="progress-fill"
+                    style={{
+                      backgroundColor: riskData.riskColor,
+                      width: riskData.progressWidth
+                    }}
+                  ></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         
-        <div className="additional-details">
-          <h3>Información Adicional</h3>
-          <div className="detail-item">
-            <strong>Categoría de riesgo:</strong> {candidate.categoría}
+        <div className="candidate-details-section">
+          <h2>Concesiones mineras por formalizar</h2>
+          
+          <div className="mining-table-container">
+            <table className="mining-table">
+              <thead>
+                <tr>
+                  <th>Año</th>
+                  <th>Delito genérico</th>
+                  <th>Específico</th>
+                  <th>Último estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                {/* Estos datos deberían venir del JSON, por ahora muestro datos de ejemplo */}
+                <tr>
+                  <td>2009</td>
+                  <td>No tipificados</td>
+                  <td>No tipificado</td>
+                  <td>Con archivo (califica)</td>
+                </tr>
+                <tr>
+                  <td>2009</td>
+                  <td>No tipificados</td>
+                  <td>No tipificado</td>
+                  <td>Con archivo definitivo (Inv. preven.)</td>
+                </tr>
+                <tr>
+                  <td>2009</td>
+                  <td>No tipificados</td>
+                  <td>No tipificado</td>
+                  <td>Con archivo (preliminar)</td>
+                </tr>
+                <tr>
+                  <td>2009</td>
+                  <td>No tipificados</td>
+                  <td>No tipificado</td>
+                  <td>Audiencia de apelación</td>
+                </tr>
+                <tr>
+                  <td>2009</td>
+                  <td>No tipificados</td>
+                  <td>No tipificado</td>
+                  <td>Con archivo (califica)</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          {/* Agrega más campos según sea necesario */}
+          
+          <div className="legal-summary">
+            <p>No registra antecedentes ni vínculos con actividades ilegales.</p>
+          </div>
         </div>
       </div>
     </div>
