@@ -1,5 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProfileBoard from './components/ProfileBoard';
+import CandidateProfile from './components/CandidateProfile';
+
+// Función para convertir un nombre a formato URL (minúsculas con guiones)
+function formatNameForURL(name) {
+  return name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '');
+}
 
 // Función para obtener los datos de riesgo según la categoría del perfil
 function obtenerDatosRiesgo(categoria, numeroDelitos) {
@@ -46,7 +58,7 @@ function obtenerDatosRiesgo(categoria, numeroDelitos) {
   };
 }
 
-function App() {
+function AppContent() {
   const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
@@ -62,7 +74,8 @@ function App() {
             party: profile["partido político postulado"],
             ...riesgo,
             crimeCount: profile["número de delitos"],
-            avatar: profile.avatar
+            avatar: profile.avatar,
+            urlName: formatNameForURL(profile["nombres y apellidos del alcalde"])
           };
         });
         setProfiles(transformed);
@@ -72,10 +85,19 @@ function App() {
       });
   }, []);
 
+  return <ProfileBoard profiles={profiles} />;
+}
+
+function App() {
   return (
-    <div className="app">
-      <ProfileBoard profiles={profiles} />
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<AppContent />} />
+          <Route path="/:name" element={<CandidateProfile />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,10 +1,28 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function ProfileCard({ profile, onViewProfile, PaperIcon }) {
+// Función para convertir un nombre a formato URL (minúsculas con guiones)
+function formatNameForURL(name) {
+  return name
+    .toLowerCase()
+    .normalize("NFD") // Separar acentos
+    .replace(/[\u0300-\u036f]/g, "") // Eliminar acentos
+    .replace(/\s+/g, '-') // Reemplazar espacios con guiones
+    .replace(/[^a-z0-9-]/g, ''); // Eliminar caracteres no alfanuméricos
+}
+
+function ProfileCard({ profile, PaperIcon }) {
+  const navigate = useNavigate();
+  
   // Construir la ruta del avatar usando el dni
   const avatarSrc = profile.dni
     ? `/web-amazonia/imagenes-bn/${profile.dni}.jpg`
     : profile.avatar || '/web-amazonia/imagenes-bn/default.jpg';
+
+  const handleViewProfile = () => {
+    const urlName = formatNameForURL(profile.name);
+    navigate(`/${urlName}`);
+  };
 
   return (
     <div className="profile-card">
@@ -38,7 +56,7 @@ function ProfileCard({ profile, onViewProfile, PaperIcon }) {
       </div>
       <button
         className="view-profile-button"
-        onClick={() => onViewProfile(profile.dni || profile.id)}
+        onClick={handleViewProfile}
       >
         <span>Ver perfil</span>
         {PaperIcon && <PaperIcon />}
