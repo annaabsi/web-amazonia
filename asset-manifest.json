@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/web-amazonia/static/css/main.c9b322de.css",
-    "main.js": "/web-amazonia/static/js/main.c7178a52.js",
+    "main.css": "/web-amazonia/static/css/main.983d9a4c.css",
+    "main.js": "/web-amazonia/static/js/main.bc2e12dc.js",
     "index.html": "/web-amazonia/index.html",
-    "main.c9b322de.css.map": "/web-amazonia/static/css/main.c9b322de.css.map",
-    "main.c7178a52.js.map": "/web-amazonia/static/js/main.c7178a52.js.map"
+    "main.983d9a4c.css.map": "/web-amazonia/static/css/main.983d9a4c.css.map",
+    "main.bc2e12dc.js.map": "/web-amazonia/static/js/main.bc2e12dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9b322de.css",
-    "static/js/main.c7178a52.js"
+    "static/css/main.983d9a4c.css",
+    "static/js/main.bc2e12dc.js"
   ]
 }
