@@ -15,23 +15,25 @@ function ProfileCard({ profile, onViewProfile, PaperIcon }) {
         <h3 className="profile-name">{profile.name}</h3>
         <p className="profile-position">{profile.position}</p>
         <p className="profile-party">{profile.party}</p>
-        <div className="profile-risk">
-          <div
-            className="risk-indicator"
-            style={{ backgroundColor: profile.riskColor }}
-          ></div>
-          <span className="risk-text">{profile.riskLevel}</span>
-        </div>
-      </div>
-      <div className="profile-progress">
-        <div className="progress-bar">
-          <div
-            className="progress-fill"
-            style={{
-              backgroundColor: profile.riskColor,
-              width: profile.progressWidth
-            }}
-          ></div>
+        <div className="profile-risk-container">
+          <div className="risk-info">
+            <div
+              className="risk-indicator"
+              style={{ backgroundColor: profile.riskColor }}
+            ></div>
+            <span className="risk-text">{profile.riskLevel}</span>
+          </div>
+          <div className="profile-progress">
+            <div className="progress-bar">
+              <div
+                className="progress-fill"
+                style={{
+                  backgroundColor: profile.riskColor,
+                  width: profile.progressWidth
+                }}
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
       <button

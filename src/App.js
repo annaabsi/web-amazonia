@@ -1,38 +1,48 @@
 import React, { useEffect, useState } from 'react';
 import ProfileBoard from './components/ProfileBoard';
 
-// Función para calcular el riesgo según los datos del perfil
-function calcularRiesgo(profile) {
-  // Aquí debes definir tu lógica real según los datos del perfil.
-  // Ejemplo usando un campo ficticio profile.riesgo (ajusta según tus datos reales):
-
-  // Puedes cambiar esta lógica por la que necesites
-  if (profile.riesgo === 'alto') {
-    return {
-      riskLevel: 'Riesgo alto',
-      riskColor: '#E93838', // rojo
+// Función para obtener los datos de riesgo según la categoría del perfil
+function obtenerDatosRiesgo(categoria, numeroDelitos) {
+  // Mapeo de categorías a los datos de riesgo según las nuevas reglas
+  const mapeoRiesgo = {
+    "Ningún delito": {
+      riskLevel: 'Ningún delito',
+      riskColor: '#00B050', // Verde puro
+      progressWidth: '0%'
+    },
+    "1 a 3 delitos": {
+      riskLevel: '1 a 3 delitos',
+      riskColor: '#92D050', // Verde claro
+      progressWidth: '20%'
+    },
+    "4 a 5 delitos": {
+      riskLevel: '4 a 5 delitos',
+      riskColor: '#FFFF00', // Amarillo
+      progressWidth: '40%'
+    },
+    "6 a 9 delitos": {
+      riskLevel: '6 a 9 delitos',
+      riskColor: '#FFC000', // Naranja
+      progressWidth: '60%'
+    },
+    "10 a 20 delitos": {
+      riskLevel: '10 a 20 delitos',
+      riskColor: '#FF5050', // Rojo claro
+      progressWidth: '80%'
+    },
+    "21 o más delitos": {
+      riskLevel: '21 o más delitos',
+      riskColor: '#C00000', // Rojo intenso
       progressWidth: '100%'
-    };
-  }
-  if (profile.riesgo === 'medio') {
-    return {
-      riskLevel: 'Riesgo medio',
-      riskColor: '#FFA600', // naranja
-      progressWidth: '75%'
-    };
-  }
-  if (profile.riesgo === 'bajo') {
-    return {
-      riskLevel: 'Riesgo bajo',
-      riskColor: '#FFD61E', // amarillo
-      progressWidth: '50%'
-    };
-  }
-  // Sin riesgo
-  return {
-    riskLevel: 'Sin riesgo',
-    riskColor: '#82B310', // verde
-    progressWidth: '20%'
+    }
+  };
+  
+  // Si la categoría no está en el mapeo, devolvemos un valor por defecto
+  return mapeoRiesgo[categoria] || {
+    riskLevel: categoria || 'Datos no disponibles',
+    riskColor: '#CCCCCC',
+    progressWidth: '10%',
+    numeroDelitos: numeroDelitos || 'N/A'
   };
 }
 
@@ -44,17 +54,21 @@ function App() {
       .then(response => response.json())
       .then(data => {
         const transformed = data.map(profile => {
-          const riesgo = calcularRiesgo(profile);
+          const riesgo = obtenerDatosRiesgo(profile.categoría, profile["número de delitos"]);
           return {
             dni: profile.dni,
             name: profile["nombres y apellidos del alcalde"],
             position: profile.cargo,
             party: profile["partido político postulado"],
             ...riesgo,
+            crimeCount: profile["número de delitos"],
             avatar: profile.avatar
           };
         });
         setProfiles(transformed);
+      })
+      .catch(error => {
+        console.error('Error cargando los datos:', error);
       });
   }, []);
 
