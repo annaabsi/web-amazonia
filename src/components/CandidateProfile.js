@@ -12,7 +12,7 @@ function formatNameForURL(name) {
     .replace(/[^a-z0-9-]/g, '');
 }
 
-// Función para obtener los datos de riesgo según la categoría del perfil (igual que en App.js)
+// Función para obtener los datos de riesgo según la categoría del perfil
 function obtenerDatosRiesgo(categoria) {
   const mapeoRiesgo = {
     "Ningún delito": {
@@ -54,10 +54,130 @@ function obtenerDatosRiesgo(categoria) {
   };
 }
 
+// Iconos para cada sección (solo móvil)
+const SectionIcons = {
+  'reinfo': '⛏️',
+  'ingemmet': '📄',
+  'conflicto_intereses': '🏢',
+  'declaracion_jurada': '📊',
+  'ministerio_publico': '⚖️'
+};
+
+// Componente para mostrar el contenido de cada sección
+function SectionContent({ activeSection, candidate, sectionData }) {
+  if (!activeSection) {
+    return (
+      <div className="section-content">
+        <div className="no-data-message">
+          Seleccione una categoría para ver la información
+        </div>
+      </div>
+    );
+  }
+
+  const { data, columns } = sectionData.find(section => section.key === activeSection) || {};
+  
+  if (!data || data.length === 0) {
+    return (
+      <div className="section-content">
+        <div className="no-data-message">
+          Sin información
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="section-content">
+      <div className="table-container">
+        <table className="data-table">
+          <thead>
+            <tr>
+              {columns.map((col, index) => (
+                <th key={index}>{col.header}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item, index) => (
+              <tr key={index}>
+                {columns.map((col, colIndex) => (
+                  <td key={colIndex}>{item[col.key] || '-'}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+// Componente para mostrar la declaración jurada
+function DeclaracionJuradaContent({ candidate }) {
+  const hasData = candidate["ingresos 2022"] !== "-" || 
+                  candidate["bienes y otros 2022"] !== "-" ||
+                  candidate["ingresos 2023"] !== "-" || 
+                  candidate["bienes y otros 2023"] !== "-" ||
+                  candidate["ingresos 2024"] !== "-" || 
+                  candidate["bienes y otros 2024"] !== "-";
+
+  if (!hasData) {
+    return (
+      <div className="section-content">
+        <div className="no-data-message">
+          Sin información
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="section-content">
+      <div className="table-container">
+        <table className="data-table">
+          <thead>
+            <tr>
+              <th>Año</th>
+              <th>Ingresos</th>
+              <th>Bienes y otros</th>
+            </tr>
+          </thead>
+          <tbody>
+            {candidate["ingresos 2022"] !== "-" && (
+              <tr>
+                <td>2022</td>
+                <td>{candidate["ingresos 2022"]}</td>
+                <td>{candidate["bienes y otros 2022"]}</td>
+              </tr>
+            )}
+            {candidate["ingresos 2023"] !== "-" && (
+              <tr>
+                <td>2023</td>
+                <td>{candidate["ingresos 2023"]}</td>
+                <td>{candidate["bienes y otros 2023"]}</td>
+              </tr>
+            )}
+            {candidate["ingresos 2024"] !== "-" && (
+              <tr>
+                <td>2024</td>
+                <td>{candidate["ingresos 2024"]}</td>
+                <td>{candidate["bienes y otros 2024"]}</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 function CandidateProfile() {
   const { name } = useParams();
   const [candidate, setCandidate] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [activeSection, setActiveSection] = useState(null);
+  const [mobileActiveSection, setMobileActiveSection] = useState(null);
 
   useEffect(() => {
     // Cargar todos los datos y buscar por nombre formateado
@@ -97,6 +217,70 @@ function CandidateProfile() {
   const avatarSrc = candidate.dni
     ? `/web-amazonia/imagenes-bn/${candidate.dni}.jpg`
     : candidate.avatar || '/web-amazonia/imagenes-bn/default.jpg';
+
+  // Definir las secciones de datos con sus respectivas columnas
+  const sectionData = [
+    {
+      key: 'reinfo',
+      title: 'Concesiones mineras por formalizar',
+      data: candidate.reinfo,
+      columns: [
+        { key: 'año', header: 'Año' },
+        { key: 'delito_generico', header: 'Delito genérico' },
+        { key: 'especifico', header: 'Específico' },
+        { key: 'ultimo_estado', header: 'Último estado' }
+      ]
+    },
+    {
+      key: 'ingemmet',
+      title: 'Título minero',
+      data: candidate.ingemmet,
+      columns: [
+        { key: 'año', header: 'Año' },
+        { key: 'numero', header: 'Número' },
+        { key: 'estado', header: 'Estado' },
+        { key: 'ubicacion', header: 'Ubicación' }
+      ]
+    },
+    {
+      key: 'conflicto_intereses',
+      title: 'Empresas',
+      data: candidate.conflicto_intereses,
+      columns: [
+        { key: 'nombre', header: 'Nombre' },
+        { key: 'ruc', header: 'RUC' },
+        { key: 'cargo', header: 'Cargo' },
+        { key: 'participacion', header: 'Participación' }
+      ]
+    },
+    {
+      key: 'ministerio_publico',
+      title: 'Investigaciones fiscales',
+      data: candidate.ministerio_publico,
+      columns: [
+        { key: 'n°caso', header: 'N° caso' },
+        { key: 'año-ingreso', header: 'Año ingreso' },
+        { key: 'delito generico', header: 'Delito genérico' },
+        { key: 'último estado', header: 'Último estado' }
+      ]
+    }
+  ];
+
+  const handleSectionClick = (sectionKey) => {
+    if (activeSection === sectionKey) {
+      setActiveSection(null);
+    } else {
+      setActiveSection(sectionKey);
+    }
+  };
+
+  const handleMobileSectionClick = (sectionKey) => {
+    if (mobileActiveSection === sectionKey) {
+      setMobileActiveSection(null);
+    } else {
+      setMobileActiveSection(sectionKey);
+    }
+  };
 
   return (
     <div className="candidate-profile-page">
@@ -159,52 +343,84 @@ function CandidateProfile() {
         </div>
         
         <div className="candidate-details-section">
-          <h2>Concesiones mineras por formalizar</h2>
+          {/* Desktop view - buttons in a row with single content container below */}
+          <div className="desktop-sections">
+            <div className="section-buttons">
+              {sectionData.map(section => (
+                <button
+                  key={section.key}
+                  className={`section-button ${activeSection === section.key ? 'active' : ''}`}
+                  onClick={() => handleSectionClick(section.key)}
+                >
+                  {section.title}
+                </button>
+              ))}
+              <button
+                className={`section-button ${activeSection === 'declaracion_jurada' ? 'active' : ''}`}
+                onClick={() => handleSectionClick('declaracion_jurada')}
+              >
+                Última declaración
+              </button>
+            </div>
+            
+            <div className="desktop-content-container">
+              {activeSection === 'declaracion_jurada' ? (
+                <DeclaracionJuradaContent candidate={candidate} />
+              ) : (
+                <SectionContent 
+                  activeSection={activeSection} 
+                  candidate={candidate} 
+                  sectionData={sectionData} 
+                />
+              )}
+            </div>
+          </div>
           
-          <div className="mining-table-container">
-            <table className="mining-table">
-              <thead>
-                <tr>
-                  <th>Año</th>
-                  <th>Delito genérico</th>
-                  <th>Específico</th>
-                  <th>Último estado</th>
-                </tr>
-              </thead>
-              <tbody>
-                {/* Estos datos deberían venir del JSON, por ahora muestro datos de ejemplo */}
-                <tr>
-                  <td>2009</td>
-                  <td>No tipificados</td>
-                  <td>No tipificado</td>
-                  <td>Con archivo (califica)</td>
-                </tr>
-                <tr>
-                  <td>2009</td>
-                  <td>No tipificados</td>
-                  <td>No tipificado</td>
-                  <td>Con archivo definitivo (Inv. preven.)</td>
-                </tr>
-                <tr>
-                  <td>2009</td>
-                  <td>No tipificados</td>
-                  <td>No tipificado</td>
-                  <td>Con archivo (preliminar)</td>
-                </tr>
-                <tr>
-                  <td>2009</td>
-                  <td>No tipificados</td>
-                  <td>No tipificado</td>
-                  <td>Audiencia de apelación</td>
-                </tr>
-                <tr>
-                  <td>2009</td>
-                  <td>No tipificados</td>
-                  <td>No tipificado</td>
-                  <td>Con archivo (califica)</td>
-                </tr>
-              </tbody>
-            </table>
+          {/* Mobile view - buttons stacked with content below each */}
+          <div className="mobile-sections">
+            {sectionData.map(section => (
+              <div key={section.key} className="mobile-section">
+                <button
+                  className={`mobile-section-button ${mobileActiveSection === section.key ? 'active' : ''}`}
+                  onClick={() => handleMobileSectionClick(section.key)}
+                >
+                  <span className="mobile-section-icon">{SectionIcons[section.key]}</span>
+                  {section.title}
+                  <span className="mobile-toggle-icon">
+                    {mobileActiveSection === section.key ? '▲' : '▼'}
+                  </span>
+                </button>
+                
+                {mobileActiveSection === section.key && (
+                  <div className="mobile-content-container">
+                    <SectionContent 
+                      activeSection={section.key} 
+                      candidate={candidate} 
+                      sectionData={sectionData} 
+                    />
+                  </div>
+                )}
+              </div>
+            ))}
+            
+            <div className="mobile-section">
+              <button
+                className={`mobile-section-button ${mobileActiveSection === 'declaracion_jurada' ? 'active' : ''}`}
+                onClick={() => handleMobileSectionClick('declaracion_jurada')}
+              >
+                <span className="mobile-section-icon">{SectionIcons['declaracion_jurada']}</span>
+                Última declaración
+                <span className="mobile-toggle-icon">
+                  {mobileActiveSection === 'declaracion_jurada' ? '▲' : '▼'}
+                </span>
+              </button>
+              
+              {mobileActiveSection === 'declaracion_jurada' && (
+                <div className="mobile-content-container">
+                  <DeclaracionJuradaContent candidate={candidate} />
+                </div>
+              )}
+            </div>
           </div>
           
           <div className="legal-summary">
