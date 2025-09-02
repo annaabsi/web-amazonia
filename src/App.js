@@ -75,6 +75,9 @@ function AppContent() {
             ...riesgo,
             crimeCount: profile["número de delitos"],
             avatar: profile.avatar,
+            departamento: profile.departamento,
+            provincia: profile.provincia,
+            distrito: profile.distrito,
             urlName: formatNameForURL(profile["nombres y apellidos del alcalde"])
           };
         });

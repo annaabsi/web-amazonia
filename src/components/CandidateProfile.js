@@ -288,7 +288,7 @@ function CandidateProfile() {
         <Link to="/" className="back-button">← Volver al listado</Link>
       </div>
       
-      <div className="candidate-profile-card">
+      <div className="candidate-profile-card bg-1">
         <div className="candidate-main-info">
           <div className="candidate-avatar-large">
             <img src={avatarSrc} alt={candidate["nombres y apellidos del alcalde"]} />
@@ -341,8 +341,9 @@ function CandidateProfile() {
             </div>
           </div>
         </div>
-        
-        <div className="candidate-details-section">
+      </div>
+      <div className='candidate-profile-card'>
+                <div className="candidate-details-section">
           {/* Desktop view - buttons in a row with single content container below */}
           <div className="desktop-sections">
             <div className="section-buttons">
@@ -423,9 +424,9 @@ function CandidateProfile() {
             </div>
           </div>
           
-          <div className="legal-summary">
+          {/* <div className="legal-summary">
             <p>No registra antecedentes ni vínculos con actividades ilegales.</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

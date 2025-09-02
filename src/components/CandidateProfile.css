@@ -32,9 +32,10 @@
 .candidate-profile-card {
   background: #FFFEFC;
   border-radius: 12px;
-  border: 1px solid #BFC5B7;
+  border: 1px solid #FFFEFC;
   padding: 30px;
   box-shadow: 0 4px 10.8px -5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
 }
 
 .candidate-main-info {
@@ -42,7 +43,6 @@
   gap: 25px;
   margin-bottom: 30px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #E9E9E8;
 }
 
 /* Foto cuadrada con bordes redondeados */
@@ -52,6 +52,13 @@
   border-radius: 12px; /* Bordes redondeados en lugar de circular */
   object-fit: cover;
   border: 2px solid #f0f0f0;
+}
+
+.candidate-basic-info {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .candidate-basic-info h1 {
@@ -676,7 +683,8 @@
   flex: 1;
   min-width: 180px;
   padding: 0.8rem 1rem;
-  background-color: #f6f8fa;
+  background-color: #396541;
+  color: white;
   border: 1px solid #e1e4e8;
   border-radius: 6px;
   cursor: pointer;
@@ -685,14 +693,10 @@
   transition: all 0.2s;
 }
 
-.section-button:hover {
-  background-color: #eaecef;
-}
-
 .section-button.active {
-  background-color: #396541;
+  background-color: #1F3824;
   color: white;
-  border-color: #396541;
+  border-color: #1F3824;
 }
 
 .desktop-content-container {
@@ -829,4 +833,100 @@
   .no-data-message {
     padding: 2rem 1rem;
   }
+}
+
+.candidate-main-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  max-height: 250px;
+}
+
+/* Para pantallas más grandes (modo horizontal) */
+@media (min-width: 768px) {
+  .candidate-main-info {
+    flex-direction: row;
+    align-items: stretch; /* Esto hace que ambos elementos tengan la misma altura */
+  }
+  
+  .candidate-avatar-large {
+    width: 30%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center;
+  }
+  
+  .candidate-avatar-large img {
+    width: 100%;
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
+    max-height: 300px; /* Límite máximo de altura */
+    object-fit: cover; /* Mantiene las proporciones y recorta si es necesario */
+    border-radius: 8px;
+  }
+  
+  .candidate-basic-info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+}
+
+/* Para pantallas móviles (modo vertical) */
+@media (max-width: 767px) {
+  .candidate-avatar-large {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .candidate-avatar-large img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .candidate-basic-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.info-value {
+  color: #6c757d;
+  text-align: right;
+}
+
+.bg-1 {
+  background: url('../../public/bg-1.png') no-repeat top center;
+  background-size: 100% 50%; /* El fondo ocupará el 100% del ancho pero solo el 50% de la altura */
+  position: relative; /* Necesario para posicionar correctamente el fondo */
 }

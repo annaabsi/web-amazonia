@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import ProfileCard from './ProfileCard';
 import './ProfileBoard.css';
 
 const profilesPerPage = 5;
-
-const dropdownOptions = {
-  departamento: ['Loreto', 'Ucayali', 'Amazonas', 'San Martín'],
-  provincia: ['Maynas', 'Coronel Portillo', 'Alto Amazonas', 'Requena'],
-  distrito: ['Iquitos', 'Punchana', 'Callería', 'Yarinacocha', 'Belén']
-};
 
 const ProfileBoard = ({ profiles = [] }) => {
   const [filters, setFilters] = useState({
@@ -20,22 +14,81 @@ const ProfileBoard = ({ profiles = [] }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageRangeStart, setPageRangeStart] = useState(1);
 
-  const profileData = profiles;
-  const totalPages = Math.ceil(profileData.length / profilesPerPage);
-  const visiblePageCount = 4; // Número de páginas visibles en la paginación
+  // Extraer opciones únicas de los perfiles con filtros dependientes
+  const dropdownOptions = useMemo(() => {
+    // Departamentos (siempre todos)
+    const departamentos = [...new Set(profiles
+      .map(p => p.departamento)
+      .filter(Boolean)
+      .sort())];
+    
+    // Provincias (depende del departamento seleccionado)
+    const provincias = [...new Set(profiles
+      .filter(p => !filters.departamento || p.departamento === filters.departamento)
+      .map(p => p.provincia)
+      .filter(Boolean)
+      .sort())];
+    
+    // Distritos (depende del departamento y provincia seleccionados)
+    const distritos = [...new Set(profiles
+      .filter(p => {
+        return (
+          (!filters.departamento || p.departamento === filters.departamento) &&
+          (!filters.provincia || p.provincia === filters.provincia)
+        );
+      })
+      .map(p => p.distrito)
+      .filter(Boolean)
+      .sort())];
+    
+    return {
+      departamento: departamentos,
+      provincia: provincias,
+      distrito: distritos
+    };
+  }, [profiles, filters.departamento, filters.provincia]);
+
+  // Filtrar perfiles según los filtros seleccionados
+  const filteredProfiles = useMemo(() => {
+    return profiles.filter(profile => {
+      return (
+        (!filters.departamento || profile.departamento === filters.departamento) &&
+        (!filters.provincia || profile.provincia === filters.provincia) &&
+        (!filters.distrito || profile.distrito === filters.distrito)
+      );
+    });
+  }, [profiles, filters]);
+
+  const totalPages = Math.ceil(filteredProfiles.length / profilesPerPage);
+  const visiblePageCount = 4;
 
   const handleDropdownToggle = (dropdownName) => {
     setOpenDropdown(openDropdown === dropdownName ? null : dropdownName);
   };
 
   const handleOptionSelect = (dropdownName, value) => {
-    setFilters(prev => ({ ...prev, [dropdownName]: value }));
+    const newFilters = { ...filters };
+    
+    if (dropdownName === 'departamento') {
+      // Al cambiar departamento, resetear provincia y distrito
+      newFilters.departamento = value;
+      newFilters.provincia = '';
+      newFilters.distrito = '';
+    } else if (dropdownName === 'provincia') {
+      // Al cambiar provincia, resetear distrito
+      newFilters.provincia = value;
+      newFilters.distrito = '';
+    } else {
+      newFilters[dropdownName] = value;
+    }
+    
+    setFilters(newFilters);
     setOpenDropdown(null);
+    setCurrentPage(1);
+    setPageRangeStart(1);
   };
 
   const handleSearch = () => {
-    // Aquí puedes filtrar los perfiles según los filtros seleccionados
-    // Por ahora solo muestra en consola
     console.log('Searching with filters:', filters);
   };
 
@@ -46,14 +99,13 @@ const ProfileBoard = ({ profiles = [] }) => {
   // Paginación
   const indexOfLastProfile = currentPage * profilesPerPage;
   const indexOfFirstProfile = indexOfLastProfile - profilesPerPage;
-  const currentProfiles = profileData.slice(indexOfFirstProfile, indexOfLastProfile);
+  const currentProfiles = filteredProfiles.slice(indexOfFirstProfile, indexOfLastProfile);
 
   // Calcular páginas visibles
   const getVisiblePages = () => {
     let startPage = pageRangeStart;
     let endPage = Math.min(startPage + visiblePageCount - 1, totalPages);
 
-    // Ajustar si estamos cerca del final
     if (endPage === totalPages && totalPages > visiblePageCount) {
       startPage = Math.max(1, totalPages - visiblePageCount + 1);
     }
@@ -115,76 +167,98 @@ const ProfileBoard = ({ profiles = [] }) => {
               </div>
               {openDropdown === dropdown && (
                 <div className="dropdown-menu">
-                  {dropdownOptions[dropdown].map(option => (
-                    <div
-                      key={option}
-                      className="dropdown-option"
-                      onClick={() => handleOptionSelect(dropdown, option)}
-                    >
-                      {option}
+                  {dropdownOptions[dropdown] && dropdownOptions[dropdown].length > 0 ? (
+                    dropdownOptions[dropdown].map(option => (
+                      <div
+                        key={option}
+                        className="dropdown-option"
+                        onClick={() => handleOptionSelect(dropdown, option)}
+                      >
+                        {option}
+                      </div>
+                    ))
+                  ) : (
+                    <div className="dropdown-option disabled">
+                      {dropdown === 'provincia' && filters.departamento ? 
+                        'Selecciona un departamento primero' : 
+                        dropdown === 'distrito' && filters.provincia ? 
+                        'Selecciona una provincia primero' : 
+                        'No hay opciones disponibles'}
                     </div>
-                  ))}
+                  )}
                 </div>
               )}
             </div>
           ))}
-          <button className="search-button" onClick={handleSearch}>
-            <span>Buscar</span>
-          </button>
+          
+          {/* Botones de búsqueda y limpiar */}
+          <div className="filter-buttons">
+            <button className="search-button" onClick={handleSearch}>
+              <span>Buscar</span>
+            </button>
+          </div>
         </div>
 
         {/* Tarjetas de perfil */}
         <div className="profiles-section">
-          {currentProfiles.map((profile) => (
-            <ProfileCard
-              key={profile.dni || profile.id}
-              profile={profile}
-              onViewProfile={handleViewProfile}
-              PaperIcon={PaperIcon}
-            />
-          ))}
+          {currentProfiles.length > 0 ? (
+            currentProfiles.map((profile) => (
+              <ProfileCard
+                key={profile.dni || profile.id}
+                profile={profile}
+                onViewProfile={handleViewProfile}
+                PaperIcon={PaperIcon}
+              />
+            ))
+          ) : (
+            <div className="no-results">
+              No se encontraron perfiles con los filtros seleccionados
+            </div>
+          )}
         </div>
 
-        {/* Paginación */}
-        <div className="pagination-section">
-          <button
-            className="pagination-arrow"
-            onClick={() => {
-              handlePrevPages();
-              setCurrentPage(Math.max(1, currentPage - 1));
-            }}
-            disabled={currentPage === 1}
-          >
-            <LeftArrow />
-          </button>
-          <div className="pagination-numbers">
-            {visiblePages.map((pageNum) => (
-              <div
-                key={pageNum}
-                className={`page-number ${pageNum === currentPage ? 'active' : ''}`}
-                onClick={() => handlePageChange(pageNum)}
-              >
-                {pageNum === currentPage ? (
-                  <div className="page-circle">
+        {/* Paginación - Solo mostrar si hay páginas */}
+        {totalPages > 0 && (
+          <div className="pagination-section">
+            <button
+              className="pagination-arrow"
+              onClick={() => {
+                handlePrevPages();
+                setCurrentPage(Math.max(1, currentPage - 1));
+              }}
+              disabled={currentPage === 1}
+            >
+              <LeftArrow />
+            </button>
+            <div className="pagination-numbers">
+              {visiblePages.map((pageNum) => (
+                <div
+                  key={pageNum}
+                  className={`page-number ${pageNum === currentPage ? 'active' : ''}`}
+                  onClick={() => handlePageChange(pageNum)}
+                >
+                  {pageNum === currentPage ? (
+                    <div className="page-circle">
+                      <span>{pageNum < 10 ? `0${pageNum}` : pageNum}</span>
+                    </div>
+                  ) : (
                     <span>{pageNum < 10 ? `0${pageNum}` : pageNum}</span>
-                  </div>
-                ) : (
-                  <span>{pageNum < 10 ? `0${pageNum}` : pageNum}</span>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              ))}
+            </div>
+            <button
+              className="pagination-arrow"
+              onClick={() => {
+                handleNextPages();
+                setCurrentPage(Math.min(totalPages, currentPage + 1));
+              }}
+              disabled={currentPage === totalPages}
+            >
+              <RightArrow />
+            </button>
           </div>
-          <button
-            className="pagination-arrow"
-            onClick={() => {
-              handleNextPages();
-              setCurrentPage(Math.min(totalPages, currentPage + 1));
-            }}
-            disabled={currentPage === totalPages}
-          >
-            <RightArrow />
-          </button>
-        </div>
+        )}
       </div>
     </div>
   );
