@@ -1,0 +1,22 @@
+/* Importar todos los pesos que necesites */
+@import '@fontsource/inter/300.css';   /* Light */
+@import '@fontsource/inter/400.css';   /* Regular */
+@import '@fontsource/inter/500.css';   /* Medium */
+@import '@fontsource/inter/600.css';   /* SemiBold */
+@import '@fontsource/inter/700.css';   /* Bold */
+@import '@fontsource/inter/800.css';   /* Bolder */
+
+/* O importar todos los pesos (si los necesitas todos) */
+/* @import '@fontsource/inter/index.css'; */
+
+/* Aplicar la fuente a todo el proyecto */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Opcional: asegurar que todos los elementos usen Inter */
+* {
+  font-family: inherit;
+}

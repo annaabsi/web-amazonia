@@ -208,7 +208,7 @@ function CandidateProfile() {
     return (
       <div className="candidate-not-found">
         <h2>Candidato no encontrado</h2>
-        <Link to="/" className="back-button">← Volver al listado</Link>
+        <Link to="/" className="back-button"></Link>
       </div>
     );
   }
@@ -285,7 +285,9 @@ function CandidateProfile() {
   return (
     <div className="candidate-profile-page">
       <div className="profile-header">
-        <Link to="/" className="back-button">← Volver al listado</Link>
+        <Link to="/" className="back-button">
+          <img src="/web-amazonia/House.png" alt="Volver" />
+        </Link>
       </div>
       
       <div className="candidate-profile-card bg-1">

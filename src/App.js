@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProfileBoard from './components/ProfileBoard';
 import CandidateProfile from './components/CandidateProfile';
+import Header from './components/Header';
+import IntroText from './components/IntroText';
+import Footer from './components/Footer';
 
 // Función para convertir un nombre a formato URL (minúsculas con guiones)
 function formatNameForURL(name) {
@@ -58,7 +61,7 @@ function obtenerDatosRiesgo(categoria, numeroDelitos) {
   };
 }
 
-function AppContent() {
+function AppContent( { isHomePage } ) {
   const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
@@ -88,7 +91,24 @@ function AppContent() {
       });
   }, []);
 
-  return <ProfileBoard profiles={profiles} />;
+  return (
+    <div>
+      {isHomePage && (
+        <div>
+          {/* Aquí van los elementos extra para la página principal */}
+          <Header />
+          <IntroText />
+        </div>
+      )}
+      <ProfileBoard profiles={profiles} />
+      {isHomePage && (
+        <div>
+          {/* Más elementos para la página principal */}
+          <Footer />
+        </div>
+      )}
+    </div>
+  );
 }
 
 function App() {
@@ -96,8 +116,9 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
-          <Route path="/" element={<AppContent />} />
-          <Route path="/:name" element={<CandidateProfile />} />
+          <Route path="/" element={<AppContent isHomePage={true} />} />
+          <Route path="/buscador" element={<AppContent isHomePage={false} />} />
+          <Route path="/buscador/:name" element={<CandidateProfile />} />
         </Routes>
       </div>
     </Router>

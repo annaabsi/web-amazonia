@@ -14,7 +14,7 @@
 }
 
 .back-button {
-  display: inline-flex;
+  /* display: inline-flex;
   align-items: center;
   padding: 10px 16px;
   background: #396541;
@@ -22,18 +22,31 @@
   text-decoration: none;
   border-radius: 8px;
   font-weight: 500;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s; */
+  position: fixed;
+  right: 2px;
+  top: 50vh;
+  background-color: #396541;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  z-index: 2;
 }
 
 .back-button:hover {
   background: #2d5235;
 }
 
+.back-button img {
+  width: 26px;
+  margin: 18px;
+}
+
 .candidate-profile-card {
   background: #FFFEFC;
   border-radius: 12px;
   border: 1px solid #FFFEFC;
-  padding: 30px;
+  padding: 30px 10px;
   box-shadow: 0 4px 10.8px -5px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
 }
@@ -41,8 +54,9 @@
 .candidate-main-info {
   display: flex;
   gap: 25px;
-  margin-bottom: 30px;
-  padding-bottom: 25px;
+  /* margin-bottom: 30px;
+  padding-bottom: 25px; */
+  padding-top: 100px;
 }
 
 /* Foto cuadrada con bordes redondeados */
@@ -63,8 +77,8 @@
 
 .candidate-basic-info h1 {
   color: #396541;
-  margin: 0 0 8px 0;
-  font-size: 28px;
+  margin: 0;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -840,7 +854,7 @@
   flex-direction: column;
   width: 100%;
   gap: 10px;
-  max-height: 250px;
+  /* max-height: 250px; */
 }
 
 /* Para pantallas más grandes (modo horizontal) */
@@ -861,7 +875,7 @@
   .candidate-avatar-large img {
     width: 100%;
     height: 100%; /* La imagen ocupa toda la altura del contenedor */
-    max-height: 300px; /* Límite máximo de altura */
+    max-height: 250px; /* Límite máximo de altura */
     object-fit: cover; /* Mantiene las proporciones y recorta si es necesario */
     border-radius: 8px;
   }
@@ -871,35 +885,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centra el contenido verticalmente */
-    gap: 15px;
-    padding: 20px;
-    border-radius: 8px;
-  }
-}
-
-/* Para pantallas móviles (modo vertical) */
-@media (max-width: 767px) {
-  .candidate-avatar-large {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .candidate-avatar-large img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .candidate-basic-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-    background-color: #f8f9fa;
+    gap: 12px;
+    padding: 30px;
     border-radius: 8px;
   }
 }
