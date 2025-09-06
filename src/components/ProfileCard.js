@@ -21,7 +21,7 @@ function ProfileCard({ profile, PaperIcon }) {
 
   const handleViewProfile = () => {
     const urlName = formatNameForURL(profile.name);
-    navigate(`/${urlName}`);
+    navigate(`/buscador/${urlName}`);
   };
 
   return (

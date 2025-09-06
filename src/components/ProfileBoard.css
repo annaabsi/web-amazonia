@@ -312,7 +312,7 @@
   color: #111;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments - SOLO PARA MÓVIL */
 @media (max-width: 768px) {
   .profile-board {
     padding: 10px;
@@ -322,13 +322,14 @@
     width: 100%;
     max-width: 700px;
     height: auto;
-    min-height: 932px;
-    padding: 10px;
+    min-height: auto;
+    padding: 15px;
   }
 
   .search-section {
     flex-wrap: wrap;
     gap: 10px;
+    margin-bottom: 30px;
   }
 
   .filter-dropdown {
@@ -336,29 +337,91 @@
     min-width: 120px;
   }
 
+  /* MANTENER las 3 secciones en línea */
   .profile-card {
     width: 100%;
     height: auto;
-    min-height: 130px;
-    flex-direction: column;
-    align-items: flex-start;
+    min-height: 100px;
+    flex-direction: row; /* Mantener en fila */
+    align-items: center;
     padding: 15px;
+    flex-wrap: wrap; /* Permitir que el botón baje */
+  }
+
+  .profile-avatar {
+    margin-right: 12px;
+    flex-shrink: 0;
   }
 
   .profile-details {
-    margin-right: 0;
-    margin-bottom: 10px;
-    width: 100%;
+    margin-right: 15px;
+    margin-bottom: 0;
+    width: auto;
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .profile-risk-container {
+    margin-right: 15px;
+    width: auto;
   }
 
   .profile-progress {
-    width: 100%;
+    width: 120px;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  /* SOLO el botón baja a nueva línea */
+  .view-profile-button {
+    align-self: center;
+    margin-top: 15px;
+    width: 100%; /* Ocupa todo el ancho */
+    order: 3; /* Forzar a que sea el tercer elemento (baje) */
+  }
+
+  /* Asegurar que los primeros elementos mantengan su orden */
+  .profile-avatar,
+  .profile-details,
+  .profile-risk-container {
+    order: 1;
+  }
+
+  .pagination-section {
+    gap: 20px;
+    margin-top: 25px;
+  }
+
+  .pagination-numbers {
+    gap: 15px;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 12px;
+  }
+
+  .profile-avatar {
+    margin-right: 10px;
+  }
+
+  .profile-name {
+    font-size: 14px;
+  }
+
+  .profile-position,
+  .profile-party {
+    font-size: 13px;
+  }
+
+  .profile-progress {
+    width: 100px;
   }
 
   .view-profile-button {
-    align-self: center;
-    margin-top: 10px;
+    height: 30px;
+    font-size: 14px;
   }
 }
