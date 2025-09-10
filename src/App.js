@@ -5,6 +5,7 @@ import CandidateProfile from './components/CandidateProfile';
 import Header from './components/Header';
 import IntroText from './components/IntroText';
 import Footer from './components/Footer';
+import './App.css';
 
 // Función para convertir un nombre a formato URL (minúsculas con guiones)
 function formatNameForURL(name) {
@@ -103,7 +104,15 @@ function AppContent( { isHomePage } ) {
       <ProfileBoard profiles={profiles} />
       {isHomePage && (
         <div>
-          {/* Más elementos para la página principal */}
+          <a href='https://almargen-media.com/la-autora-del-unico-sustento-de-la-ley-de-carcel-para-menores-tiene-un-audio-con-cesar-hinostroza-y-fue-homenajeada-por-chibolin/'>
+            <div className='nota-home'>
+              <img src="https://almargen-media.com/wp-content/uploads/2025/08/Autora-proyecto-ley-32330.webp" alt="Logo Amazonia" className='logo-amazonia' />
+              <div>
+                <p>Tras las huellas del contrabando de tortugas y sus huevos en la selva amazónica de Bolivia</p>
+                <span>ver más</span>
+              </div>
+            </div>
+          </a>
           <Footer />
         </div>
       )}
