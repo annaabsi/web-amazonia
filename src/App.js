@@ -122,7 +122,7 @@ function AppContent( { isHomePage } ) {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/web-amazonia">
       <div className="app">
         <Routes>
           <Route path="/" element={<AppContent isHomePage={true} />} />
