@@ -1,6 +1,6 @@
 [
   {
-    "ubigeo": "010000",
+    "ubigeo": "10000",
     "departamento": "Amazonas",
     "provincia": "",
     "distrito": "",
@@ -11,18 +11,20 @@
     "reinfo": [],
     "sistema de derechos mineros de - ingemmet": "",
     "declaracion jurada de intereses - conflicto": "",
-    "ingresos 2022": "",
-    "bienes y otros 2022": "",
-    "ingresos 2023": "",
-    "bienes y otros 2023": "",
-    "ingresos 2024": "",
-    "bienes y otros 2024": "",
+    "ingresos 2022": "-",
+    "bienes y otros 2022": "-",
+    "ingresos 2023": "S/.14,300.00",
+    "bienes y otros 2023": "S/.24,076,331.08",
+    "ingresos 2024": "S/.14,300.00",
+    "bienes y otros 2024": "S/.35,049,647.05",
     "incremento de bienes para 2024": "",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "58",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.27,710.00",
+    "bienes y otros 2025": "S/.29,639,005.73",
     "dni": "7711761",
     "ingemmet": [],
     "ministerio_publico": [
@@ -960,7 +962,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010101",
+    "ubigeo": "10101",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Chachapoyas",
@@ -983,6 +985,8 @@
     "profesión": "Economista",
     "número de delitos": "20",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "S/.7,500.00",
+    "bienes y otros 2025": "S/.46,403.70",
     "dni": "40125457",
     "ingemmet": [],
     "ministerio_publico": [
@@ -1312,7 +1316,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010102",
+    "ubigeo": "10102",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Asunción",
@@ -1335,6 +1339,8 @@
     "profesión": "Educación",
     "número de delitos": "11",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "S/.2,752.21",
+    "bienes y otros 2025": "S/.100,000.00",
     "dni": "33720760",
     "ingemmet": [],
     "ministerio_publico": [
@@ -1551,7 +1557,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010103",
+    "ubigeo": "10103",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Balsas",
@@ -1566,14 +1572,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.3,300.00",
     "bienes y otros 2023": "S/.104,000.00",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.3,352.20",
+    "bienes y otros 2024": "S/.66,500.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.3,542.20",
+    "bienes y otros 2025": "S/.66,500.00",
     "dni": "33409755",
     "ingemmet": [],
     "ministerio_publico": [
@@ -1599,7 +1607,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010104",
+    "ubigeo": "10104",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Cheto",
@@ -1622,6 +1630,8 @@
     "profesión": "Educación",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "S/.2,652.21",
+    "bienes y otros 2025": "S/.887,500.00",
     "dni": "41433498",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -1630,7 +1640,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010105",
+    "ubigeo": "10105",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Chiliquín",
@@ -1653,6 +1663,8 @@
     "profesión": "-",
     "número de delitos": "23",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.2,752.21",
+    "bienes y otros 2025": "S/.1,747,700.00",
     "dni": "33411301",
     "ingemmet": [],
     "ministerio_publico": [
@@ -2030,7 +2042,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010106",
+    "ubigeo": "10106",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Chuquibamba",
@@ -2053,6 +2065,8 @@
     "profesión": "Derecho",
     "número de delitos": "6",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43407995",
     "ingemmet": [],
     "ministerio_publico": [
@@ -2158,7 +2172,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010107",
+    "ubigeo": "10107",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Granada",
@@ -2181,6 +2195,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44113072",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -2205,7 +2221,7 @@
     ]
   },
   {
-    "ubigeo": "010108",
+    "ubigeo": "10108",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Huancas",
@@ -2220,14 +2236,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.2,600.00",
     "bienes y otros 2023": "S/.420,000.00",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.2,945.41",
+    "bienes y otros 2024": "S/.680,000.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "21",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.3,045.41",
+    "bienes y otros 2025": "S/.680,000.00",
     "dni": "43691909",
     "ingemmet": [],
     "ministerio_publico": [
@@ -2573,7 +2591,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010109",
+    "ubigeo": "10109",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "La Jalca",
@@ -2596,6 +2614,8 @@
     "profesión": "Ingeniería Civil",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "S/.8,450.00",
+    "bienes y otros 2025": "S/.295,000.00",
     "dni": "45807822",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -2604,7 +2624,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010110",
+    "ubigeo": "10110",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Leimebamba",
@@ -2627,6 +2647,8 @@
     "profesión": "Ingeniería Química",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.4,352.21",
+    "bienes y otros 2025": "S/.150,000.00",
     "dni": "41212722",
     "ingemmet": [],
     "ministerio_publico": [
@@ -2668,7 +2690,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010111",
+    "ubigeo": "10111",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Levanto",
@@ -2691,6 +2713,8 @@
     "profesión": "Ingeniería Agroindustrial",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40452979",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -2715,7 +2739,7 @@
     ]
   },
   {
-    "ubigeo": "010112",
+    "ubigeo": "10112",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Magdalena",
@@ -2730,14 +2754,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.2,600.00",
     "bienes y otros 2023": "S/.35,000.00",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.2,600.00",
+    "bienes y otros 2024": "S/.57,800.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "Sí",
     "profesión": "Mecánica de producción",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40499710",
     "ingemmet": [],
     "ministerio_publico": [
@@ -2835,7 +2861,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010113",
+    "ubigeo": "10113",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Mariscal Castilla",
@@ -2858,6 +2884,8 @@
     "profesión": "-",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43842317",
     "ingemmet": [],
     "ministerio_publico": [
@@ -2931,7 +2959,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010114",
+    "ubigeo": "10114",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Molinopampa",
@@ -2954,6 +2982,8 @@
     "profesión": "Suboficial de la PNP",
     "número de delitos": "15",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "9488063",
     "ingemmet": [],
     "ministerio_publico": [
@@ -3219,7 +3249,7 @@
     ]
   },
   {
-    "ubigeo": "010115",
+    "ubigeo": "10115",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Montevideo",
@@ -3242,6 +3272,8 @@
     "profesión": "Ingeniería Agroindustrial",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "S/.2,852.21",
+    "bienes y otros 2025": "S/.212,000.00",
     "dni": "44926521",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -3266,7 +3298,7 @@
     ]
   },
   {
-    "ubigeo": "010116",
+    "ubigeo": "10116",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Olleros",
@@ -3279,16 +3311,18 @@
     "declaracion jurada de intereses - conflicto": "Sí",
     "ingresos 2022": "S/.3,130.00",
     "bienes y otros 2022": "S/.268,000.00",
-    "ingresos 2023": "-",
-    "bienes y otros 2023": "-",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2023": "S/.2,652.00",
+    "bienes y otros 2023": "S/.300,000.00",
+    "ingresos 2024": "S/.2,652.00",
+    "bienes y otros 2024": "S/.300,000.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "Contabilidad",
     "número de delitos": "6",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "S/.2,702.21",
+    "bienes y otros 2025": "S/.300,000.00",
     "dni": "40084562",
     "ingemmet": [],
     "ministerio_publico": [
@@ -3425,7 +3459,7 @@
     ]
   },
   {
-    "ubigeo": "010117",
+    "ubigeo": "10117",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Quinjalca",
@@ -3448,6 +3482,8 @@
     "profesión": "-",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44232941",
     "ingemmet": [],
     "ministerio_publico": [
@@ -3489,7 +3525,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010118",
+    "ubigeo": "10118",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "San Francisco de Daguas",
@@ -3512,6 +3548,8 @@
     "profesión": "Tecnicatura en contabilidad",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "S/.2,702.21",
+    "bienes y otros 2025": "S/.7,227,090.00",
     "dni": "43409432",
     "ingemmet": [],
     "ministerio_publico": [
@@ -3585,7 +3623,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010119",
+    "ubigeo": "10119",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "San Isidro de Maino",
@@ -3608,6 +3646,8 @@
     "profesión": "Educación",
     "número de delitos": "6",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "80300945",
     "ingemmet": [],
     "ministerio_publico": [
@@ -3713,7 +3753,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010120",
+    "ubigeo": "10120",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Soloco",
@@ -3761,6 +3801,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40204031",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -3800,7 +3842,7 @@
     ]
   },
   {
-    "ubigeo": "010121",
+    "ubigeo": "10121",
     "departamento": "Amazonas",
     "provincia": "Chachapoyas",
     "distrito": "Sonche",
@@ -3823,6 +3865,8 @@
     "profesión": "Educación",
     "número de delitos": "10",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33430301",
     "ingemmet": [],
     "ministerio_publico": [
@@ -4032,7 +4076,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010201",
+    "ubigeo": "10201",
     "departamento": "Amazonas",
     "provincia": "Bagua",
     "distrito": "Bagua",
@@ -4055,6 +4099,8 @@
     "profesión": "Administración",
     "número de delitos": "14",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "S/.9,100.00",
+    "bienes y otros 2025": "S/.4,014,500.00",
     "dni": "40864538",
     "ingemmet": [],
     "ministerio_publico": [
@@ -4349,7 +4395,7 @@
     ]
   },
   {
-    "ubigeo": "010202",
+    "ubigeo": "10202",
     "departamento": "Amazonas",
     "provincia": "Bagua",
     "distrito": "Aramango",
@@ -4372,6 +4418,8 @@
     "profesión": "-",
     "número de delitos": "11",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "16671416",
     "ingemmet": [],
     "ministerio_publico": [
@@ -4557,7 +4605,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010203",
+    "ubigeo": "10203",
     "departamento": "Amazonas",
     "provincia": "Bagua",
     "distrito": "Copallín",
@@ -4580,6 +4628,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "S/.5,000.00",
+    "bienes y otros 2025": "S/.980,000.00",
     "dni": "42046765",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -4588,7 +4638,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010204",
+    "ubigeo": "10204",
     "departamento": "Amazonas",
     "provincia": "Bagua",
     "distrito": "El Parco",
@@ -4601,16 +4651,18 @@
     "declaracion jurada de intereses - conflicto": "No",
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
-    "ingresos 2023": "-",
-    "bienes y otros 2023": "-",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2023": "S/.3,200.00",
+    "bienes y otros 2023": "S/.8,000.00",
+    "ingresos 2024": "S/.3,200.00",
+    "bienes y otros 2024": "S/.7,500.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.3,200.00",
+    "bienes y otros 2025": "S/.6,000.00",
     "dni": "42560611",
     "ingemmet": [],
     "ministerio_publico": [
@@ -4636,7 +4688,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010205",
+    "ubigeo": "10205",
     "departamento": "Amazonas",
     "provincia": "Bagua",
     "distrito": "Imaza",
@@ -4659,6 +4711,8 @@
     "profesión": "Educación",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "S/.7,500.00",
+    "bienes y otros 2025": "S/.26,350.00",
     "dni": "41177615",
     "ingemmet": [],
     "ministerio_publico": [
@@ -4780,7 +4834,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010206",
+    "ubigeo": "10206",
     "departamento": "Amazonas",
     "provincia": "Bagua",
     "distrito": "La Peca",
@@ -4803,6 +4857,8 @@
     "profesión": "-",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.5,402.00",
+    "bienes y otros 2025": "S/.235,815.49",
     "dni": "33591180",
     "ingemmet": [],
     "ministerio_publico": [
@@ -4875,7 +4931,7 @@
     ]
   },
   {
-    "ubigeo": "010301",
+    "ubigeo": "10301",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Jumbilla",
@@ -4890,14 +4946,16 @@
     "bienes y otros 2022": ".-",
     "ingresos 2023": "S/.7,500.00",
     "bienes y otros 2023": "S/.205,200.00",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.7,602.21",
+    "bienes y otros 2024": "S/.208,303.27",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "Ingeniería Alimentaria",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.7,602.21",
+    "bienes y otros 2025": "S/.205,552.81",
     "dni": "10681335",
     "ingemmet": [],
     "ministerio_publico": [
@@ -4970,7 +5028,7 @@
     ]
   },
   {
-    "ubigeo": "010302",
+    "ubigeo": "10302",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Chisquilla",
@@ -4983,16 +5041,18 @@
     "declaracion jurada de intereses - conflicto": "No",
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
-    "ingresos 2023": "-",
-    "bienes y otros 2023": "-",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2023": "S/.2,600.00",
+    "bienes y otros 2023": "S/.22,500.00",
+    "ingresos 2024": "S/.2,702.21",
+    "bienes y otros 2024": "S/.26,002.20",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "6",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40914153",
     "ingemmet": [],
     "ministerio_publico": [
@@ -5098,7 +5158,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010303",
+    "ubigeo": "10303",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Churuja",
@@ -5121,6 +5181,8 @@
     "profesión": "Enfermería",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44920644",
     "ingemmet": [],
     "ministerio_publico": [
@@ -5146,7 +5208,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010304",
+    "ubigeo": "10304",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Corosha",
@@ -5169,6 +5231,8 @@
     "profesión": "-",
     "número de delitos": "16",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41624185",
     "ingemmet": [],
     "ministerio_publico": [
@@ -5434,7 +5498,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010305",
+    "ubigeo": "10305",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Cuispes",
@@ -5457,6 +5521,8 @@
     "profesión": "Ingeniería Civil",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.2,702.21",
+    "bienes y otros 2025": "S/.71,000.00",
     "dni": "42039646",
     "ingemmet": [],
     "ministerio_publico": [
@@ -5514,7 +5580,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010306",
+    "ubigeo": "10306",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Florida",
@@ -5537,6 +5603,8 @@
     "profesión": "Medicina veterinaria",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "S/.4,953.88",
+    "bienes y otros 2025": "S/.226,644.80",
     "dni": "40783472",
     "ingemmet": [],
     "ministerio_publico": [
@@ -5610,7 +5678,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010307",
+    "ubigeo": "10307",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Jazán",
@@ -5621,8 +5689,8 @@
     "reinfo": [],
     "sistema de derechos mineros de - ingemmet": "",
     "declaracion jurada de intereses - conflicto": "No",
-    "ingresos 2022": "S/.2,600.00",
-    "bienes y otros 2022": "-",
+    "ingresos 2022": "S/.5,352.21",
+    "bienes y otros 2022": "S/.132,000.00",
     "ingresos 2023": "S/.5,352.21",
     "bienes y otros 2023": "S/.132,000.00",
     "ingresos 2024": "S/.5,352.21",
@@ -5633,6 +5701,8 @@
     "profesión": "-",
     "número de delitos": "11",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "S/.5,352.21",
+    "bienes y otros 2025": "S/.660,502.67",
     "dni": "45738932",
     "ingemmet": [],
     "ministerio_publico": [
@@ -5818,7 +5888,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010308",
+    "ubigeo": "10308",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Recta ",
@@ -5833,14 +5903,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.2,600.00",
     "bienes y otros 2023": "S/.256,600.00",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.2,600.00",
+    "bienes y otros 2024": "S/.246,600.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "23",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33941575",
     "ingemmet": [],
     "ministerio_publico": [
@@ -6218,7 +6290,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010309",
+    "ubigeo": "10309",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "San Carlos",
@@ -6241,6 +6313,8 @@
     "profesión": "Educación",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40892955",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -6249,7 +6323,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010310",
+    "ubigeo": "10310",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Shipasbamba",
@@ -6272,6 +6346,8 @@
     "profesión": "Administración",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42783733",
     "ingemmet": [],
     "ministerio_publico": [
@@ -6313,7 +6389,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010311",
+    "ubigeo": "10311",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Valera",
@@ -6328,14 +6404,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.3,300.00",
     "bienes y otros 2023": "S/.232,000.00",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.3,400.00",
+    "bienes y otros 2024": "S/.250,098.62",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "12",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33725181",
     "ingemmet": [],
     "ministerio_publico": [
@@ -6568,7 +6646,7 @@
     ]
   },
   {
-    "ubigeo": "010312",
+    "ubigeo": "10312",
     "departamento": "Amazonas",
     "provincia": "Bongará",
     "distrito": "Yambrasbamba",
@@ -6591,6 +6669,8 @@
     "profesión": "Ingeniería Civil",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "46158248",
     "ingemmet": [],
     "ministerio_publico": [
@@ -6664,7 +6744,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010401",
+    "ubigeo": "10401",
     "departamento": "Amazonas",
     "provincia": "Condorcanqui",
     "distrito": "Nieva",
@@ -6687,6 +6767,8 @@
     "profesión": "Administración",
     "número de delitos": "46",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42125519",
     "ingemmet": [],
     "ministerio_publico": [
@@ -7432,7 +7514,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010402",
+    "ubigeo": "10402",
     "departamento": "Amazonas",
     "provincia": "Condorcanqui",
     "distrito": "El Cenepa",
@@ -7455,6 +7537,8 @@
     "profesión": "Enfermería",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44351799",
     "ingemmet": [],
     "ministerio_publico": [
@@ -7528,7 +7612,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010403",
+    "ubigeo": "10403",
     "departamento": "Amazonas",
     "provincia": "Condorcanqui",
     "distrito": "Río Santiago",
@@ -7551,6 +7635,8 @@
     "profesión": "-",
     "número de delitos": "9",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45153825",
     "ingemmet": [],
     "ministerio_publico": [
@@ -7735,7 +7821,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010501",
+    "ubigeo": "10501",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Lámud",
@@ -7750,14 +7836,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.7,500.00",
     "bienes y otros 2023": "S/.376,350.00",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.7,500.00",
+    "bienes y otros 2024": "S/.480,658.53",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "34",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40402651",
     "ingemmet": [],
     "ministerio_publico": [
@@ -8327,7 +8415,7 @@
     ]
   },
   {
-    "ubigeo": "010502",
+    "ubigeo": "10502",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Camporredondo",
@@ -8350,6 +8438,8 @@
     "profesión": "Zootecnia",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.4,700.00",
+    "bienes y otros 2025": "S/.514,700.00",
     "dni": "43299058",
     "ingemmet": [],
     "ministerio_publico": [
@@ -8407,7 +8497,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010503",
+    "ubigeo": "10503",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Cocabamba",
@@ -8430,6 +8520,8 @@
     "profesión": "Derecho",
     "número de delitos": "33",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43887795",
     "ingemmet": [],
     "ministerio_publico": [
@@ -8998,7 +9090,7 @@
     ]
   },
   {
-    "ubigeo": "010504",
+    "ubigeo": "10504",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Colcamar",
@@ -9021,6 +9113,8 @@
     "profesión": "Sanidad PNP",
     "número de delitos": "9",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33407331",
     "ingemmet": [],
     "ministerio_publico": [
@@ -9174,7 +9268,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010505",
+    "ubigeo": "10505",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Conila",
@@ -9197,6 +9291,8 @@
     "profesión": "Oficial Marítimo",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "9970753",
     "ingemmet": [],
     "ministerio_publico": [
@@ -9254,7 +9350,7 @@
     ]
   },
   {
-    "ubigeo": "010506",
+    "ubigeo": "10506",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Inguilpata",
@@ -9269,14 +9365,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.2,600.00",
     "bienes y otros 2023": "S/.2,267,127.05",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.2,945.41",
+    "bienes y otros 2024": "S/.44,000.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "Docencia",
     "número de delitos": "6",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33408311",
     "ingemmet": [],
     "ministerio_publico": [
@@ -9382,7 +9480,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010507",
+    "ubigeo": "10507",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Longuita",
@@ -9405,6 +9503,8 @@
     "profesión": "Sanidad PNP",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33945725",
     "ingemmet": [],
     "ministerio_publico": [
@@ -9478,7 +9578,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010508",
+    "ubigeo": "10508",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Lonya Chico",
@@ -9501,6 +9601,8 @@
     "profesión": "Educación",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "70252371",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -9509,7 +9611,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010509",
+    "ubigeo": "10509",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Luya",
@@ -9532,6 +9634,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "S/.1,025.00",
+    "bienes y otros 2025": "S/.319,500.00",
     "dni": "40477686",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -9583,7 +9687,7 @@
     ]
   },
   {
-    "ubigeo": "010510",
+    "ubigeo": "10510",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Luya Viejo",
@@ -9606,6 +9710,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "S/.2,852.21",
+    "bienes y otros 2025": "S/.684,458.02",
     "dni": "40368649",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -9614,7 +9720,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010511",
+    "ubigeo": "10511",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "María",
@@ -9637,6 +9743,8 @@
     "profesión": "Ingeniería Agroindustrial",
     "número de delitos": "6",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "S/.3,352.21",
+    "bienes y otros 2025": "S/.172,555.10",
     "dni": "41788065",
     "ingemmet": [],
     "ministerio_publico": [
@@ -9788,7 +9896,7 @@
     ]
   },
   {
-    "ubigeo": "010512",
+    "ubigeo": "10512",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Ocalli",
@@ -9811,6 +9919,8 @@
     "profesión": "Ingeniería Agroindustrial",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44076781",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -9819,7 +9929,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010513",
+    "ubigeo": "10513",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Ocumal",
@@ -9842,6 +9952,8 @@
     "profesión": "-",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "16714721",
     "ingemmet": [],
     "ministerio_publico": [
@@ -9963,7 +10075,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010514",
+    "ubigeo": "10514",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Pisuquia",
@@ -9986,6 +10098,8 @@
     "profesión": "-",
     "número de delitos": "15",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33433159",
     "ingemmet": [],
     "ministerio_publico": [
@@ -10262,7 +10376,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010515",
+    "ubigeo": "10515",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Providencia",
@@ -10285,6 +10399,8 @@
     "profesión": "Ingeniería Agrícola",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40625521",
     "ingemmet": [],
     "ministerio_publico": [
@@ -10326,7 +10442,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010516",
+    "ubigeo": "10516",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "San Cristóbal",
@@ -10349,6 +10465,8 @@
     "profesión": "-",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.2,400.00",
+    "bienes y otros 2025": "S/.0.00",
     "dni": "42110271",
     "ingemmet": [],
     "ministerio_publico": [
@@ -10374,7 +10492,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010517",
+    "ubigeo": "10517",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "San Francisco del Yeso",
@@ -10397,6 +10515,8 @@
     "profesión": "Mecánica de producción",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "27059144",
     "ingemmet": [],
     "ministerio_publico": [
@@ -10438,7 +10558,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010518",
+    "ubigeo": "10518",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "San Jerónimo",
@@ -10461,6 +10581,8 @@
     "profesión": "Ingeniería Civil",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "47120001",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -10469,7 +10591,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010519",
+    "ubigeo": "10519",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "San Juan de Lopecancha",
@@ -10492,6 +10614,8 @@
     "profesión": "Computación",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "70130431",
     "ingemmet": [],
     "ministerio_publico": [
@@ -10565,7 +10689,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010520",
+    "ubigeo": "10520",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Santa Catalina",
@@ -10588,6 +10712,8 @@
     "profesión": "-",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "47097104",
     "ingemmet": [],
     "ministerio_publico": [
@@ -10645,7 +10771,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010521",
+    "ubigeo": "10521",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Santo Tomás",
@@ -10668,6 +10794,8 @@
     "profesión": "Ciencias Contables",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45887507",
     "ingemmet": [],
     "ministerio_publico": [
@@ -10789,7 +10917,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010522",
+    "ubigeo": "10522",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Tingo",
@@ -10812,6 +10940,8 @@
     "profesión": "Producción agropecuaria",
     "número de delitos": "9",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45151770",
     "ingemmet": [],
     "ministerio_publico": [
@@ -10981,7 +11111,7 @@
     ]
   },
   {
-    "ubigeo": "010523",
+    "ubigeo": "10523",
     "departamento": "Amazonas",
     "provincia": "Luya",
     "distrito": "Trita",
@@ -11004,6 +11134,8 @@
     "profesión": "Turismo y Administración",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42807237",
     "ingemmet": [],
     "ministerio_publico": [
@@ -11061,7 +11193,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010601",
+    "ubigeo": "10601",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "San Nicolás",
@@ -11084,6 +11216,8 @@
     "profesión": "Educación",
     "número de delitos": "41",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33950104",
     "ingemmet": [],
     "ministerio_publico": [
@@ -11749,7 +11883,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010602",
+    "ubigeo": "10602",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Chirimoto",
@@ -11772,6 +11906,8 @@
     "profesión": "-",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33962883",
     "ingemmet": [],
     "ministerio_publico": [
@@ -11797,7 +11933,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010603",
+    "ubigeo": "10603",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Cochamal",
@@ -11820,6 +11956,8 @@
     "profesión": "Administración",
     "número de delitos": "12",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "10547820",
     "ingemmet": [],
     "ministerio_publico": [
@@ -12021,7 +12159,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010604",
+    "ubigeo": "10604",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Huambo",
@@ -12044,6 +12182,8 @@
     "profesión": "Educación",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44759883",
     "ingemmet": [],
     "ministerio_publico": [
@@ -12133,7 +12273,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010605",
+    "ubigeo": "10605",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Limabamba",
@@ -12156,6 +12296,8 @@
     "profesión": "Educación",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33423201",
     "ingemmet": [],
     "ministerio_publico": [
@@ -12213,7 +12355,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010606",
+    "ubigeo": "10606",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Longar",
@@ -12236,6 +12378,8 @@
     "profesión": "-",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33948984",
     "ingemmet": [],
     "ministerio_publico": [
@@ -12373,7 +12517,7 @@
     ]
   },
   {
-    "ubigeo": "010607",
+    "ubigeo": "10607",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Mariscal Benavides",
@@ -12396,6 +12540,8 @@
     "profesión": "Ciencias de la Comunicación",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43444627",
     "ingemmet": [],
     "ministerio_publico": [
@@ -12453,7 +12599,7 @@
     ]
   },
   {
-    "ubigeo": "010608",
+    "ubigeo": "10608",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Milpuc",
@@ -12476,6 +12622,8 @@
     "profesión": "-",
     "número de delitos": "13",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "9458570",
     "ingemmet": [],
     "ministerio_publico": [
@@ -12693,7 +12841,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010609",
+    "ubigeo": "10609",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Omia",
@@ -12716,6 +12864,8 @@
     "profesión": "Ingeniería de Sistemas",
     "número de delitos": "33",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "10329529",
     "ingemmet": [],
     "ministerio_publico": [
@@ -13253,7 +13403,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010610",
+    "ubigeo": "10610",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Santa Rosa",
@@ -13276,6 +13426,8 @@
     "profesión": "Psicología",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43625934",
     "ingemmet": [],
     "ministerio_publico": [
@@ -13317,7 +13469,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010611",
+    "ubigeo": "10611",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Totora",
@@ -13340,6 +13492,8 @@
     "profesión": "Odontología",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "47673142",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -13348,7 +13502,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010612",
+    "ubigeo": "10612",
     "departamento": "Amazonas",
     "provincia": "Rodríguez de Mendoza",
     "distrito": "Vista Alegre",
@@ -13371,6 +13525,8 @@
     "profesión": "-",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33680412",
     "ingemmet": [],
     "ministerio_publico": [
@@ -13412,7 +13568,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010701",
+    "ubigeo": "10701",
     "departamento": "Amazonas",
     "provincia": "Utcubamba",
     "distrito": "Bagua Grande",
@@ -13435,6 +13591,8 @@
     "profesión": "Derecho",
     "número de delitos": "91",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "16544919",
     "ingemmet": [],
     "ministerio_publico": [
@@ -14916,7 +15074,7 @@
     ]
   },
   {
-    "ubigeo": "010702",
+    "ubigeo": "10702",
     "departamento": "Amazonas",
     "provincia": "Utcubamba",
     "distrito": "Cajaruro",
@@ -14939,6 +15097,8 @@
     "profesión": "Ingeniería Agrícola",
     "número de delitos": "15",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44349199",
     "ingemmet": [],
     "ministerio_publico": [
@@ -15188,7 +15348,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010703",
+    "ubigeo": "10703",
     "departamento": "Amazonas",
     "provincia": "Utcubamba",
     "distrito": "Cumba",
@@ -15211,6 +15371,8 @@
     "profesión": "-",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41573857",
     "ingemmet": [],
     "ministerio_publico": [
@@ -15300,7 +15462,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010704",
+    "ubigeo": "10704",
     "departamento": "Amazonas",
     "provincia": "Utcubamba",
     "distrito": "El Milagro",
@@ -15323,6 +15485,8 @@
     "profesión": "-",
     "número de delitos": "23",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33560548",
     "ingemmet": [],
     "ministerio_publico": [
@@ -15700,7 +15864,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010705",
+    "ubigeo": "10705",
     "departamento": "Amazonas",
     "provincia": "Utcubamba",
     "distrito": "Jamalca",
@@ -15723,6 +15887,8 @@
     "profesión": "-",
     "número de delitos": "40",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "80291419",
     "ingemmet": [],
     "ministerio_publico": [
@@ -16372,7 +16538,7 @@
     "conflicto_intereses": []
   },
   {
-    "ubigeo": "010706",
+    "ubigeo": "10706",
     "departamento": "Amazonas",
     "provincia": "Utcubamba",
     "distrito": "Lonya Grande",
@@ -16395,6 +16561,8 @@
     "profesión": "Arquitectura",
     "número de delitos": "15",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "S/.5,352.21",
+    "bienes y otros 2025": "S/.1,767,812.50",
     "dni": "16713532",
     "ingemmet": [],
     "ministerio_publico": [
@@ -16660,7 +16828,7 @@
     ]
   },
   {
-    "ubigeo": "010707",
+    "ubigeo": "10707",
     "departamento": "Amazonas",
     "provincia": "Utcubamba",
     "distrito": "Yamón",
@@ -16683,6 +16851,8 @@
     "profesión": "Zootecnia",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42332730",
     "ingemmet": [],
     "ministerio_publico": [
@@ -16735,18 +16905,20 @@
     "reinfo": [],
     "sistema de derechos mineros de - ingemmet": "",
     "declaracion jurada de intereses - conflicto": "",
-    "ingresos 2022": "",
-    "bienes y otros 2022": "",
-    "ingresos 2023": "",
-    "bienes y otros 2023": "",
-    "ingresos 2024": "",
-    "bienes y otros 2024": "",
+    "ingresos 2022": "-",
+    "bienes y otros 2022": "-",
+    "ingresos 2023": "-",
+    "bienes y otros 2023": "-",
+    "ingresos 2024": "S/.14,300.00",
+    "bienes y otros 2024": "S/.134,800.00",
     "incremento de bienes para 2024": "",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "Doctor en medicina",
     "número de delitos": "66",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.14,300.00",
+    "bienes y otros 2025": "S/.167,133.72",
     "dni": "41103058",
     "ingemmet": [],
     "ministerio_publico": [
@@ -17835,6 +18007,8 @@
     "profesión": "Economía",
     "número de delitos": "29",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5319280",
     "ingemmet": [],
     "ministerio_publico": [
@@ -18331,6 +18505,8 @@
     "profesión": "Educación",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5296858",
     "ingemmet": [],
     "ministerio_publico": [
@@ -18411,6 +18587,8 @@
     "profesión": "Policía Nacional del Perú",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43626436",
     "ingemmet": [],
     "ministerio_publico": [
@@ -18523,6 +18701,8 @@
     "profesión": "Técnico Agropecuario",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5301608",
     "ingemmet": [],
     "ministerio_publico": [
@@ -18635,6 +18815,8 @@
     "profesión": "-",
     "número de delitos": "9",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "9675108",
     "ingemmet": [],
     "ministerio_publico": [
@@ -18827,6 +19009,8 @@
     "profesión": "-",
     "número de delitos": "9",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5311948",
     "ingemmet": [],
     "ministerio_publico": [
@@ -19003,6 +19187,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5311489",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -19034,6 +19220,8 @@
     "profesión": "Ciencias Biológicas",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44075555",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -19081,6 +19269,8 @@
     "profesión": "Educación",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43135431",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -19112,6 +19302,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42551310",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -19159,6 +19351,8 @@
     "profesión": "Medicina",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5409838",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -19295,6 +19489,8 @@
     "profesión": "Derecho",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45891402",
     "ingemmet": [],
     "ministerio_publico": [
@@ -19560,6 +19756,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "46069727",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -19591,6 +19789,8 @@
     "profesión": "Educación",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5601832",
     "ingemmet": [],
     "ministerio_publico": [
@@ -19671,6 +19871,8 @@
     "profesión": "Educación",
     "número de delitos": "28",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40374752",
     "ingemmet": [],
     "ministerio_publico": [
@@ -20151,6 +20353,8 @@
     "profesión": "Tecnicatura en construcción civil",
     "número de delitos": "11",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "46601964",
     "ingemmet": [],
     "ministerio_publico": [
@@ -20359,6 +20563,8 @@
     "profesión": "Psicología",
     "número de delitos": "18",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5612687",
     "ingemmet": [],
     "ministerio_publico": [
@@ -20710,6 +20916,8 @@
     "profesión": "-",
     "número de delitos": "58",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43131012",
     "ingemmet": [],
     "ministerio_publico": [
@@ -21670,6 +21878,8 @@
     "profesión": "-",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42407166",
     "ingemmet": [],
     "ministerio_publico": [
@@ -21782,6 +21992,8 @@
     "profesión": "Educación",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5318531",
     "ingemmet": [],
     "ministerio_publico": [
@@ -21830,6 +22042,8 @@
     "profesión": "Construcción Civil",
     "número de delitos": "10",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44033220",
     "ingemmet": [],
     "ministerio_publico": [
@@ -22022,6 +22236,8 @@
     "profesión": "-",
     "número de delitos": "8",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44023302",
     "ingemmet": [],
     "ministerio_publico": [
@@ -22198,6 +22414,8 @@
     "profesión": "Ingeniería Agronómica",
     "número de delitos": "36",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5284283",
     "ingemmet": [],
     "ministerio_publico": [
@@ -22806,6 +23024,8 @@
     "profesión": "Ingeniería Industrial",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5791471",
     "ingemmet": [],
     "ministerio_publico": [
@@ -22950,6 +23170,8 @@
     "profesión": "-",
     "número de delitos": "12",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "17826922",
     "ingemmet": [],
     "ministerio_publico": [
@@ -23190,6 +23412,8 @@
     "profesión": "-",
     "número de delitos": "16",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "80674463",
     "ingemmet": [],
     "ministerio_publico": [
@@ -23478,6 +23702,8 @@
     "profesión": "Economía",
     "número de delitos": "42",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45232897",
     "ingemmet": [],
     "ministerio_publico": [
@@ -24198,6 +24424,8 @@
     "profesión": "-",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5862040",
     "ingemmet": [],
     "ministerio_publico": [
@@ -24294,6 +24522,8 @@
     "profesión": "Educación",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40201989",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -24325,6 +24555,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5850573",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -24356,6 +24588,8 @@
     "profesión": "-",
     "número de delitos": "10",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42873594",
     "ingemmet": [],
     "ministerio_publico": [
@@ -24548,6 +24782,8 @@
     "profesión": "Derecho",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42567841",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -24579,6 +24815,8 @@
     "profesión": "Gestión Escolar",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5857227",
     "ingemmet": [],
     "ministerio_publico": [
@@ -24643,6 +24881,8 @@
     "profesión": "Técnico Forestal",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42488944",
     "ingemmet": [],
     "ministerio_publico": [
@@ -24691,6 +24931,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41315172",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -24722,6 +24964,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "23007877",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -24753,6 +24997,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43674170",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -24784,6 +25030,8 @@
     "profesión": "Derecho",
     "número de delitos": "21",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43623823",
     "ingemmet": [],
     "ministerio_publico": [
@@ -25152,6 +25400,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "47214092",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -25199,6 +25449,8 @@
     "profesión": "-",
     "número de delitos": "32",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40056715",
     "ingemmet": [],
     "ministerio_publico": [
@@ -25783,6 +26035,8 @@
     "profesión": "Educación",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44676060",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -25814,6 +26068,8 @@
     "profesión": "-",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40760650",
     "ingemmet": [],
     "ministerio_publico": [
@@ -25894,6 +26150,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "34",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "21142124",
     "ingemmet": [],
     "ministerio_publico": [
@@ -26470,6 +26728,8 @@
     "profesión": "Ingeniería Forestal",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41075069",
     "ingemmet": [],
     "ministerio_publico": [
@@ -26534,6 +26794,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44706413",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -26565,6 +26827,8 @@
     "profesión": "-",
     "número de delitos": "55",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43191925",
     "ingemmet": [],
     "ministerio_publico": [
@@ -27477,6 +27741,8 @@
     "profesión": "Educación",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "80397913",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -27508,6 +27774,8 @@
     "profesión": "Educación",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "46510293",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -27539,6 +27807,8 @@
     "profesión": "-",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44442297",
     "ingemmet": [],
     "ministerio_publico": [
@@ -27619,6 +27889,8 @@
     "profesión": "-",
     "número de delitos": "13",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "47152248",
     "ingemmet": [],
     "ministerio_publico": [
@@ -27875,6 +28147,8 @@
     "profesión": "Tecnicatura en Agropecuario",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "80594518",
     "ingemmet": [],
     "ministerio_publico": [
@@ -27939,6 +28213,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43731280",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -27970,6 +28246,8 @@
     "profesión": "Ingeniería Ambiental",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "72322080",
     "ingemmet": [],
     "ministerio_publico": [
@@ -28056,8 +28334,8 @@
     "declaracion jurada de intereses - conflicto": "No",
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
-    "ingresos 2023": "14300",
-    "bienes y otros 2023": "987808.46",
+    "ingresos 2023": "S/.14,300.00",
+    "bienes y otros 2023": "S/.987,808.46",
     "ingresos 2024": "S/.14,300.00",
     "bienes y otros 2024": "S/.1,390,089.70",
     "incremento de bienes para 2024": "40.14%",
@@ -28066,6 +28344,8 @@
     "profesión": "-",
     "número de delitos": "128",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.14,300.00",
+    "bienes y otros 2025": "S/.1,357,483.10",
     "dni": "48507818",
     "ingemmet": [
       {
@@ -30630,16 +30910,18 @@
     "declaracion jurada de intereses - conflicto": "Sí",
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
-    "ingresos 2023": "9100",
-    "bienes y otros 2023": "1142656.17",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2023": "S/.9,100.00",
+    "bienes y otros 2023": "S/.1,142,656.17",
+    "ingresos 2024": "S/.9,100.00",
+    "bienes y otros 2024": "S/.942,314.57",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "138",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.9,100.00",
+    "bienes y otros 2025": "S/.1,062,300.69",
     "dni": "4813566",
     "ingemmet": [
       {
@@ -33470,6 +33752,8 @@
     "profesión": "Derecho",
     "número de delitos": "11",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45559548",
     "ingemmet": [],
     "ministerio_publico": [
@@ -33694,6 +33978,8 @@
     "profesión": "Administración",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41510586",
     "ingemmet": [],
     "ministerio_publico": [
@@ -33795,6 +34081,8 @@
     "profesión": "-",
     "número de delitos": "20",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "23984635",
     "ingemmet": [
       {
@@ -34427,16 +34715,18 @@
     "declaracion jurada de intereses - conflicto": "No",
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
-    "ingresos 2023": "-",
-    "bienes y otros 2023": "-",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2023": "S/.6,812.50",
+    "bienes y otros 2023": "S/.125,000.00",
+    "ingresos 2024": "S/.6,812.50",
+    "bienes y otros 2024": "S/.123,000.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.6,812.50",
+    "bienes y otros 2025": "S/.123,000.00",
     "dni": "20030568",
     "ingemmet": [
       {
@@ -34550,14 +34840,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "-",
     "bienes y otros 2023": "-",
-    "ingresos 2024": "3300",
-    "bienes y otros 2024": "11600",
+    "ingresos 2024": "S/.3,300.00",
+    "bienes y otros 2024": "S/.11,600.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "11",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "S/.3,300.00",
+    "bienes y otros 2025": "S/.11,100.00",
     "dni": "4961362",
     "ingemmet": [],
     "ministerio_publico": [
@@ -34769,8 +35061,8 @@
     "declaracion jurada de intereses - conflicto": "No",
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
-    "ingresos 2023": "4700",
-    "bienes y otros 2023": "486877.41",
+    "ingresos 2023": "S/.4,700.00",
+    "bienes y otros 2023": "S/.486,877.41",
     "ingresos 2024": "-",
     "bienes y otros 2024": "-",
     "incremento de bienes para 2024": "#¡VALOR!",
@@ -34779,6 +35071,8 @@
     "profesión": "Educación",
     "número de delitos": "13",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "5071810",
     "ingemmet": [],
     "ministerio_publico": [
@@ -35044,6 +35338,8 @@
     "profesión": "-",
     "número de delitos": "14",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43444864",
     "ingemmet": [],
     "ministerio_publico": [
@@ -35300,6 +35596,8 @@
     "profesión": "-",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1866725",
     "ingemmet": [],
     "ministerio_publico": [
@@ -35402,16 +35700,18 @@
     "declaracion jurada de intereses - conflicto": "No",
     "ingresos 2022": "S/.13,000.00",
     "bienes y otros 2022": "S/.98,962.79",
-    "ingresos 2023": "-",
-    "bienes y otros 2023": "-",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2023": "S/.4,700.00",
+    "bienes y otros 2023": "S/.126,257.41",
+    "ingresos 2024": "S/.4,700.00",
+    "bienes y otros 2024": "S/.121,257.41",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "Ingeniería Civil",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "S/.4,700.00",
+    "bienes y otros 2025": "S/.121,257.41",
     "dni": "40265691",
     "ingemmet": [],
     "ministerio_publico": [
@@ -35547,7 +35847,7 @@
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.4,100.00",
-    "bienes y otros 2023": "-",
+    "bienes y otros 2023": "S/.0.00",
     "ingresos 2024": "S/.4,153.00",
     "bienes y otros 2024": "S/.229,306.00",
     "incremento de bienes para 2024": "#¡VALOR!",
@@ -35556,6 +35856,8 @@
     "profesión": "-",
     "número de delitos": "9",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "S/.4,153.00",
+    "bienes y otros 2025": "S/.151,306.00",
     "dni": "16756994",
     "ingemmet": [],
     "ministerio_publico": [
@@ -35720,18 +36022,20 @@
     "reinfo": [],
     "sistema de derechos mineros de - ingemmet": "No",
     "declaracion jurada de intereses - conflicto": "Sí",
-    "ingresos 2022": "",
-    "bienes y otros 2022": "",
-    "ingresos 2023": "",
-    "bienes y otros 2023": "",
-    "ingresos 2024": "",
-    "bienes y otros 2024": "",
+    "ingresos 2022": "-",
+    "bienes y otros 2022": "-",
+    "ingresos 2023": "S/.14,300.00",
+    "bienes y otros 2023": "S/.30,160.34",
+    "ingresos 2024": "S/.14,300.00",
+    "bienes y otros 2024": "S/.33,493.66",
     "incremento de bienes para 2024": "",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "58",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.14,786.72",
+    "bienes y otros 2025": "S/.43,767.27",
     "dni": "1077388",
     "ingemmet": [],
     "ministerio_publico": [
@@ -36723,6 +37027,8 @@
     "profesión": "-",
     "número de delitos": "13",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44108868",
     "ingemmet": [],
     "ministerio_publico": [
@@ -36979,6 +37285,8 @@
     "profesión": "Educación",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "828654",
     "ingemmet": [],
     "ministerio_publico": [
@@ -37043,6 +37351,8 @@
     "profesión": "-",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42149818",
     "ingemmet": [],
     "ministerio_publico": [
@@ -37171,6 +37481,8 @@
     "profesión": "Educación",
     "número de delitos": "13",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "80548197",
     "ingemmet": [],
     "ministerio_publico": [
@@ -37411,6 +37723,8 @@
     "profesión": "Sociología",
     "número de delitos": "16",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44731354",
     "ingemmet": [],
     "ministerio_publico": [
@@ -37699,6 +38013,8 @@
     "profesión": "Administración",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45560663",
     "ingemmet": [],
     "ministerio_publico": [
@@ -37811,6 +38127,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "59",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "870069",
     "ingemmet": [],
     "ministerio_publico": [
@@ -38787,6 +39105,8 @@
     "profesión": "-",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43014310",
     "ingemmet": [],
     "ministerio_publico": [
@@ -38883,6 +39203,8 @@
     "profesión": "-",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "16785799",
     "ingemmet": [],
     "ministerio_publico": [
@@ -38979,6 +39301,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "46306903",
     "ingemmet": [],
     "ministerio_publico": [
@@ -39027,6 +39351,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "888716",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -39074,6 +39400,8 @@
     "profesión": "-",
     "número de delitos": "15",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "883477",
     "ingemmet": [],
     "ministerio_publico": [
@@ -39346,6 +39674,8 @@
     "profesión": "Ingeniería Civil",
     "número de delitos": "13",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42419215",
     "ingemmet": [],
     "ministerio_publico": [
@@ -39602,6 +39932,8 @@
     "profesión": "Ingeniería Agronómica",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "46045709",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -39633,6 +39965,8 @@
     "profesión": "-",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "958047",
     "ingemmet": [],
     "ministerio_publico": [
@@ -39729,6 +40063,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43550905",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -39760,6 +40096,8 @@
     "profesión": "-",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41944454",
     "ingemmet": [],
     "ministerio_publico": [
@@ -39808,6 +40146,8 @@
     "profesión": "Arquitectura",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "865625",
     "ingemmet": [],
     "ministerio_publico": [
@@ -39888,6 +40228,8 @@
     "profesión": "-",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33676298",
     "ingemmet": [],
     "ministerio_publico": [
@@ -39952,6 +40294,8 @@
     "profesión": "-",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45163572",
     "ingemmet": [],
     "ministerio_publico": [
@@ -40096,6 +40440,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "80226503",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -40143,6 +40489,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42386590",
     "ingemmet": [],
     "ministerio_publico": [
@@ -40255,6 +40603,8 @@
     "profesión": "-",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "853004",
     "ingemmet": [],
     "ministerio_publico": [
@@ -40367,6 +40717,8 @@
     "profesión": "Educación",
     "número de delitos": "13",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "950513",
     "ingemmet": [],
     "ministerio_publico": [
@@ -40623,6 +40975,8 @@
     "profesión": "-",
     "número de delitos": "6",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "73685050",
     "ingemmet": [],
     "ministerio_publico": [
@@ -40767,6 +41121,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43926927",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -40798,6 +41154,8 @@
     "profesión": "-",
     "número de delitos": "22",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41665950",
     "ingemmet": [],
     "ministerio_publico": [
@@ -41182,6 +41540,8 @@
     "profesión": "Derecho",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45004923",
     "ingemmet": [],
     "ministerio_publico": [
@@ -41278,6 +41638,8 @@
     "profesión": "Zootecnia",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45400688",
     "ingemmet": [],
     "ministerio_publico": [
@@ -41358,6 +41720,8 @@
     "profesión": "Derecho",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "71476993",
     "ingemmet": [],
     "ministerio_publico": [
@@ -41454,6 +41818,8 @@
     "profesión": "Producción Agropecuaria",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41620132",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -41485,6 +41851,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1161586",
     "ingemmet": [],
     "ministerio_publico": [
@@ -41565,6 +41933,8 @@
     "profesión": "Administración",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42257814",
     "ingemmet": [],
     "ministerio_publico": [
@@ -41677,6 +42047,8 @@
     "profesión": "Ingeniería de Sistemas",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "18138473",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -41708,6 +42080,8 @@
     "profesión": "Técnicatura en Computación",
     "número de delitos": "13",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43202575",
     "ingemmet": [],
     "ministerio_publico": [
@@ -41964,6 +42338,8 @@
     "profesión": "Educación",
     "número de delitos": "12",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "975116",
     "ingemmet": [],
     "ministerio_publico": [
@@ -42188,6 +42564,8 @@
     "profesión": "Tecnicatura en mecánica",
     "número de delitos": "21",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "25311511",
     "ingemmet": [],
     "ministerio_publico": [
@@ -42556,6 +42934,8 @@
     "profesión": "Ingeniería Ambiental",
     "número de delitos": "21",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "831580",
     "ingemmet": [],
     "ministerio_publico": [
@@ -42940,6 +43320,8 @@
     "profesión": "Educación",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "982731",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -42971,6 +43353,8 @@
     "profesión": "-",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1095146",
     "ingemmet": [],
     "ministerio_publico": [
@@ -43035,6 +43419,8 @@
     "profesión": "Ingeniería Agronómica",
     "número de delitos": "8",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1160259",
     "ingemmet": [],
     "ministerio_publico": [
@@ -43195,6 +43581,8 @@
     "profesión": "Ingeniería Ambiental",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "43680448",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -43226,6 +43614,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40939602",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -43257,6 +43647,8 @@
     "profesión": "-",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "9909672",
     "ingemmet": [],
     "ministerio_publico": [
@@ -43401,6 +43793,8 @@
     "profesión": "Construcción civil",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44528010",
     "ingemmet": [],
     "ministerio_publico": [
@@ -43465,6 +43859,8 @@
     "profesión": "Ingeniería de Sistemas",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1141407",
     "ingemmet": [],
     "ministerio_publico": [
@@ -43545,6 +43941,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42738671",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -43592,6 +43990,8 @@
     "profesión": "Ingeniería Civil",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "46504809",
     "ingemmet": [],
     "ministerio_publico": [
@@ -43752,6 +44152,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "70761215",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -43799,6 +44201,8 @@
     "profesión": "-",
     "número de delitos": "15",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1155645",
     "ingemmet": [],
     "ministerio_publico": [
@@ -44071,6 +44475,8 @@
     "profesión": "Educación",
     "número de delitos": "17",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1036688",
     "ingemmet": [],
     "ministerio_publico": [
@@ -44375,6 +44781,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44506622",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -44406,6 +44814,8 @@
     "profesión": "Administración",
     "número de delitos": "6",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41623594",
     "ingemmet": [],
     "ministerio_publico": [
@@ -44550,6 +44960,8 @@
     "profesión": "Ingeniería Ambiental",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "46322134",
     "ingemmet": [],
     "ministerio_publico": [
@@ -44630,6 +45042,8 @@
     "profesión": "-",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1152285",
     "ingemmet": [],
     "ministerio_publico": [
@@ -44774,6 +45188,8 @@
     "profesión": "-",
     "número de delitos": "49",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1059574",
     "ingemmet": [],
     "ministerio_publico": [
@@ -45590,6 +46006,8 @@
     "profesión": "-",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41741491",
     "ingemmet": [],
     "ministerio_publico": [
@@ -45654,6 +46072,8 @@
     "profesión": "Educación",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "41245950",
     "ingemmet": [],
     "ministerio_publico": [
@@ -45734,6 +46154,8 @@
     "profesión": "-",
     "número de delitos": "23",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1130248",
     "ingemmet": [],
     "ministerio_publico": [
@@ -46180,6 +46602,8 @@
     "profesión": "Ingeniería Agronómica",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1157099",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -46211,6 +46635,8 @@
     "profesión": "-",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "125334",
     "ingemmet": [],
     "ministerio_publico": [
@@ -46323,6 +46749,8 @@
     "profesión": "Obstetricia",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1128250",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -46354,6 +46782,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44419451",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -46385,6 +46815,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "13",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44810884",
     "ingemmet": [],
     "ministerio_publico": [
@@ -46625,6 +47057,8 @@
     "profesión": "Educación",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42693195",
     "ingemmet": [],
     "ministerio_publico": [
@@ -46689,6 +47123,8 @@
     "profesión": "Ingeniería Agronómica",
     "número de delitos": "9",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "80671293",
     "ingemmet": [],
     "ministerio_publico": [
@@ -46881,6 +47317,8 @@
     "profesión": "-",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1109439",
     "ingemmet": [],
     "ministerio_publico": [
@@ -46992,6 +47430,8 @@
     "profesión": "-",
     "número de delitos": "6",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1091113",
     "ingemmet": [],
     "ministerio_publico": [
@@ -47120,6 +47560,8 @@
     "profesión": "Tecnicatura en Agropecuario",
     "número de delitos": "7",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40968041",
     "ingemmet": [],
     "ministerio_publico": [
@@ -47264,6 +47706,8 @@
     "profesión": "Educación",
     "número de delitos": "8",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "1142567",
     "ingemmet": [],
     "ministerio_publico": [
@@ -47424,6 +47868,8 @@
     "profesión": "Ingeniería",
     "número de delitos": "2",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "952961",
     "ingemmet": [],
     "ministerio_publico": [
@@ -47488,6 +47934,8 @@
     "profesión": "-",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "40048712",
     "ingemmet": [],
     "ministerio_publico": [
@@ -47536,6 +47984,8 @@
     "profesión": "Ingeniería Agronómica",
     "número de delitos": "41",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "16512585",
     "ingemmet": [],
     "ministerio_publico": [
@@ -48251,6 +48701,8 @@
     "profesión": "-",
     "número de delitos": "37",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "80024217",
     "ingemmet": [],
     "ministerio_publico": [
@@ -48921,6 +49373,8 @@
     "profesión": "-",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "33590717",
     "ingemmet": [],
     "ministerio_publico": [
@@ -49033,6 +49487,8 @@
     "profesión": "-",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44443966",
     "ingemmet": [],
     "ministerio_publico": [
@@ -49113,6 +49569,8 @@
     "profesión": "-",
     "número de delitos": "53",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "22488333",
     "ingemmet": [],
     "ministerio_publico": [
@@ -49987,7 +50445,7 @@
   },
   {
     "ubigeo": "221006",
-    "departamento": "San Martín",
+    "departamento": "San MartÍn",
     "provincia": "Tocache",
     "distrito": "Santa Lucia 1/",
     "cargo": "Alcalde Distrital",
@@ -50009,6 +50467,8 @@
     "profesión": "Ingeniería Civil",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "73470627",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -50044,18 +50504,20 @@
     "reinfo": [],
     "sistema de derechos mineros de - ingemmet": "",
     "declaracion jurada de intereses - conflicto": "",
-    "ingresos 2022": "",
-    "bienes y otros 2022": "",
-    "ingresos 2023": "",
-    "bienes y otros 2023": "",
-    "ingresos 2024": "",
-    "bienes y otros 2024": "",
+    "ingresos 2022": "-",
+    "bienes y otros 2022": "-",
+    "ingresos 2023": "S/.17,300.00",
+    "bienes y otros 2023": "S/.1,342,687.55",
+    "ingresos 2024": "S/.14,300.00",
+    "bienes y otros 2024": "S/.1,041,174.22",
     "incremento de bienes para 2024": "",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "182",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.14,300.00",
+    "bienes y otros 2025": "S/.1,917,014.94",
     "dni": "188009",
     "ingemmet": [],
     "ministerio_publico": [
@@ -53000,6 +53462,8 @@
     "profesión": "Derecho",
     "número de delitos": "44",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.14,841.60",
+    "bienes y otros 2025": "S/.507,259.28",
     "dni": "22509735",
     "ingemmet": [],
     "ministerio_publico": [
@@ -53744,14 +54208,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.6,200.00",
     "bienes y otros 2023": "S/.5,000.00",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.6,200.00",
+    "bienes y otros 2024": "S/.7,000.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "Contabilidad",
     "número de delitos": "8",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "59532",
     "ingemmet": [],
     "ministerio_publico": [
@@ -53912,6 +54378,8 @@
     "profesión": "Mecánica Automotriz",
     "número de delitos": "28",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.5,300.00",
+    "bienes y otros 2025": "S/.980,210.00",
     "dni": "49829",
     "ingemmet": [],
     "ministerio_publico": [
@@ -54382,16 +54850,18 @@
     "declaracion jurada de intereses - conflicto": "No",
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
-    "ingresos 2023": "-",
-    "bienes y otros 2023": "-",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2023": "S/.1,860.00",
+    "bienes y otros 2023": "S/.0.00",
+    "ingresos 2024": "S/.1,860.00",
+    "bienes y otros 2024": "S/.500.00",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "-",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.1,860.00",
+    "bienes y otros 2025": "S/.0.00",
     "dni": "42102547",
     "ingemmet": [],
     "ministerio_publico": [
@@ -54462,8 +54932,8 @@
     "declaracion jurada de intereses - conflicto": "No",
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
-    "ingresos 2023": "-",
-    "bienes y otros 2023": "-",
+    "ingresos 2023": "S/.9,100.00",
+    "bienes y otros 2023": "S/.18,100.00",
     "ingresos 2024": "-",
     "bienes y otros 2024": "-",
     "incremento de bienes para 2024": "#¡VALOR!",
@@ -54472,6 +54942,8 @@
     "profesión": "Derecho",
     "número de delitos": "29",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "42265258",
     "ingemmet": [],
     "ministerio_publico": [
@@ -54968,6 +55440,8 @@
     "profesión": "Tecnicatura en Enfermería",
     "número de delitos": "4",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44777858",
     "ingemmet": [],
     "ministerio_publico": [
@@ -55056,14 +55530,16 @@
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.9,100.00",
     "bienes y otros 2023": "S/.204,000.00",
-    "ingresos 2024": "-",
-    "bienes y otros 2024": "-",
+    "ingresos 2024": "S/.9,100.00",
+    "bienes y otros 2024": "S/.56,647.80",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "Educación",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.9,100.00",
+    "bienes y otros 2025": "S/.56,647.80",
     "dni": "126444",
     "ingemmet": [],
     "ministerio_publico": [
@@ -55144,6 +55620,8 @@
     "profesión": "-",
     "número de delitos": "73",
     "categoría": "21 o más delitos",
+    "ingresos 2025": "S/.7,500.00",
+    "bienes y otros 2025": "S/.63,187.45",
     "dni": "68639",
     "ingemmet": [],
     "ministerio_publico": [
@@ -56332,18 +56810,20 @@
     "reinfo": [],
     "sistema de derechos mineros de - ingemmet": "",
     "declaracion jurada de intereses - conflicto": "No",
-    "ingresos 2022": "-",
-    "bienes y otros 2022": "-",
-    "ingresos 2023": "S/.5,745.34",
-    "bienes y otros 2023": "-",
-    "ingresos 2024": "S/.5,352.21",
-    "bienes y otros 2024": "S/.150,000.00",
+    "ingresos 2022": "S/.5,745.34",
+    "bienes y otros 2022": "S/.0.00",
+    "ingresos 2023": "S/.5,352.21",
+    "bienes y otros 2023": "S/.150,000.00",
+    "ingresos 2024": "-",
+    "bienes y otros 2024": "-",
     "incremento de bienes para 2024": "#¡VALOR!",
     "antecedentes penales": "No",
     "demandas civiles": "No",
     "profesión": "Derecho",
     "número de delitos": "5",
     "categoría": "4 a 5 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44866461",
     "ingemmet": [],
     "ministerio_publico": [
@@ -56447,7 +56927,7 @@
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
     "ingresos 2023": "S/.5,300.00",
-    "bienes y otros 2023": "-",
+    "bienes y otros 2023": "S/.0.00",
     "ingresos 2024": "-",
     "bienes y otros 2024": "-",
     "incremento de bienes para 2024": "#¡VALOR!",
@@ -56456,6 +56936,8 @@
     "profesión": "Tecnicatura en Enfermería",
     "número de delitos": "9",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "166273",
     "ingemmet": [],
     "ministerio_publico": [
@@ -56632,6 +57114,8 @@
     "profesión": "-",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.3,300.00",
+    "bienes y otros 2025": "S/.39,500.00",
     "dni": "45317725",
     "ingemmet": [],
     "ministerio_publico": [
@@ -56680,6 +57164,8 @@
     "profesión": "Economía",
     "número de delitos": "15",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "S/.7,552.21",
+    "bienes y otros 2025": "S/.37,331.76",
     "dni": "22674606",
     "ingemmet": [],
     "ministerio_publico": [
@@ -56942,7 +57428,7 @@
     "declaracion jurada de intereses - conflicto": "No",
     "ingresos 2022": "-",
     "bienes y otros 2022": "-",
-    "ingresos 2023": "-",
+    "ingresos 2023": "S/.0.00",
     "bienes y otros 2023": "S/.1,010.00",
     "ingresos 2024": "S/.5,000.00",
     "bienes y otros 2024": "S/.13,000.00",
@@ -56952,6 +57438,8 @@
     "profesión": "-",
     "número de delitos": "0",
     "categoría": "Ningún delito",
+    "ingresos 2025": "S/.780.00",
+    "bienes y otros 2025": "S/.3,000.00",
     "dni": "46946948",
     "ingemmet": [],
     "ministerio_publico": [],
@@ -56983,6 +57471,8 @@
     "profesión": "-",
     "número de delitos": "20",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "188602",
     "ingemmet": [],
     "ministerio_publico": [
@@ -57335,6 +57825,8 @@
     "profesión": "Contabilidad",
     "número de delitos": "9",
     "categoría": "6 a 9 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "45708373",
     "ingemmet": [],
     "ministerio_publico": [
@@ -57527,6 +58019,8 @@
     "profesión": "Ingeniería Industrial",
     "número de delitos": "17",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "44782124",
     "ingemmet": [],
     "ministerio_publico": [
@@ -57831,6 +58325,8 @@
     "profesión": "Educación",
     "número de delitos": "1",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "S/.4,100.00",
+    "bienes y otros 2025": "S/.459,300.00",
     "dni": "22754977",
     "ingemmet": [],
     "ministerio_publico": [
@@ -57879,6 +58375,8 @@
     "profesión": "-",
     "número de delitos": "3",
     "categoría": "1 a 3 delitos",
+    "ingresos 2025": "-",
+    "bienes y otros 2025": "-",
     "dni": "108240",
     "ingemmet": [],
     "ministerio_publico": [
@@ -57959,6 +58457,8 @@
     "profesión": "Ciencias Forestales",
     "número de delitos": "11",
     "categoría": "10 a 20 delitos",
+    "ingresos 2025": "S/.4,700.00",
+    "bienes y otros 2025": "S/.20,709.40",
     "dni": "42313524",
     "ingemmet": [],
     "ministerio_publico": [
