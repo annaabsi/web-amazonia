@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web-amazonia/static/css/main.c619708f.css",
-    "main.js": "/web-amazonia/static/js/main.091223eb.js",
+    "main.css": "/web-amazonia/static/css/main.b0e3bef4.css",
+    "main.js": "/web-amazonia/static/js/main.3ff5982a.js",
     "static/media/portada.png": "/web-amazonia/static/media/portada.bd04a4915a74dd8e9987.png",
     "static/media/bg-1.png": "/web-amazonia/static/media/bg-1.1bcaebf2eb73aaefbbaa.png",
     "static/media/inter-latin-ext-600-normal.woff": "/web-amazonia/static/media/inter-latin-ext-600-normal.4d0d5017d71ea1750fc1.woff",
@@ -89,11 +89,11 @@
     "static/media/inter-vietnamese-300-normal.woff2": "/web-amazonia/static/media/inter-vietnamese-300-normal.2a4055b17286ecdd503d.woff2",
     "static/media/inter-vietnamese-400-normal.woff2": "/web-amazonia/static/media/inter-vietnamese-400-normal.44c9df135eec470b0ab6.woff2",
     "index.html": "/web-amazonia/index.html",
-    "main.c619708f.css.map": "/web-amazonia/static/css/main.c619708f.css.map",
-    "main.091223eb.js.map": "/web-amazonia/static/js/main.091223eb.js.map"
+    "main.b0e3bef4.css.map": "/web-amazonia/static/css/main.b0e3bef4.css.map",
+    "main.3ff5982a.js.map": "/web-amazonia/static/js/main.3ff5982a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c619708f.css",
-    "static/js/main.091223eb.js"
+    "static/css/main.b0e3bef4.css",
+    "static/js/main.3ff5982a.js"
   ]
 }
