@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProfileBoard from './components/ProfileBoard';
 import CandidateProfile from './components/CandidateProfile';
 import Header from './components/Header';
+import HeaderGeneral from './components/Header-General';
 import IntroText from './components/IntroText';
 import Footer from './components/Footer';
 import './App.css';
@@ -94,6 +95,7 @@ function AppContent( { isHomePage } ) {
 
   return (
     <div>
+      <HeaderGeneral />
       {isHomePage && (
         <div>
           {/* Aquí van los elementos extra para la página principal */}

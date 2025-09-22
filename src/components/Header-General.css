@@ -1,0 +1,147 @@
+/* Header-General.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.neve-skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 10000;
+  text-decoration: none;
+}
+
+.neve-skip-link:focus {
+  top: 0;
+}
+
+.custom-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 90px;
+  padding: 0 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  z-index: 1001;
+  padding: 10px;
+}
+
+.menu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: none;
+  flex-direction: column;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.menu.active {
+  display: flex;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.menu ul li a:hover {
+  background: #f0f0f0;
+}
+
+.logo-center {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-center img {
+  width: 168px;
+  height: 74px;
+  object-fit: contain;
+}
+
+.social-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  padding-right: 24px;
+}
+
+.social-right a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social-right a:hover {
+  color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-right {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    border: none;
+  }
+
+  .menu ul li a {
+    padding: 16px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .custom-header {
+    grid-template-columns: auto 1fr;
+  }
+  
+  .logo-center {
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+}
