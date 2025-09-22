@@ -3,13 +3,23 @@ import './Header-General.css';
 
 const HeaderGeneral = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="custom-header">
+    <header className={`custom-header ${isScrolled ? 'scrolled' : ''}`}>
       <a className="neve-skip-link show-on-focus" href="#content">
         Skip to content
       </a>
@@ -35,7 +45,9 @@ const HeaderGeneral = () => {
       <div className="logo-center">
         <a href="https://almargen-media.com/">
           <img 
-            src="https://almargen-media.com/wp-content/uploads/2024/12/LOGO_RGB_1-1024x454.png" 
+            src={isScrolled 
+              ? "https://almargen-media.com/wp-content/uploads/2025/05/LOGO_RGB_1-1024x454.webp" 
+              : "https://almargen-media.com/wp-content/uploads/2025/04/LOGO_RGB_2-1024x454.webp"} 
             alt="Logo Al Margen" 
           />
         </a>

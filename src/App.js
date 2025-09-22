@@ -4,6 +4,7 @@ import ProfileBoard from './components/ProfileBoard';
 import CandidateProfile from './components/CandidateProfile';
 import Header from './components/Header';
 import HeaderGeneral from './components/Header-General';
+import FooterGeneral from './components/Footer-General';
 import IntroText from './components/IntroText';
 import Footer from './components/Footer';
 import './App.css';
@@ -118,6 +119,7 @@ function AppContent( { isHomePage } ) {
           <Footer />
         </div>
       )}
+      <FooterGeneral />
     </div>
   );
 }
