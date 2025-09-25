@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import HeaderGeneral from './Header-General';
+import FooterGeneral from './Footer-General';
+import Footer from './Footer';
 import './CandidateProfile.css';
 
 // Función para convertir un nombre a formato URL (minúsculas con guiones)
@@ -178,6 +181,7 @@ function CandidateProfile() {
   const [loading, setLoading] = useState(true);
   const [activeSection, setActiveSection] = useState(null);
   const [mobileActiveSection, setMobileActiveSection] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(true);
 
   useEffect(() => {
     // Cargar todos los datos y buscar por nombre formateado
@@ -283,6 +287,8 @@ function CandidateProfile() {
   };
 
   return (
+    <>
+    <HeaderGeneral isScrolledProp={true} />
     <div className="candidate-profile-page">
       <div className="profile-header">
         <Link to="/" className="back-button">
@@ -432,6 +438,9 @@ function CandidateProfile() {
         </div>
       </div>
     </div>
+    <Footer />
+    <FooterGeneral />
+    </>
   );
 }
 

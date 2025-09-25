@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './Header-General.css';
 
-const HeaderGeneral = () => {
+const HeaderGeneral = ({ isScrolledProp = null }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    if (isScrolledProp !== null) {
+      setIsScrolled(isScrolledProp);
+      return;
+    }
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isScrolledProp]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
