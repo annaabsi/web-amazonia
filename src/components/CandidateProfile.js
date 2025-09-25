@@ -225,10 +225,10 @@ function CandidateProfile() {
       title: 'Concesiones mineras por formalizar',
       data: candidate.reinfo,
       columns: [
-        { key: 'año', header: 'Año' },
-        { key: 'delito_generico', header: 'Delito genérico' },
-        { key: 'especifico', header: 'Específico' },
-        { key: 'ultimo_estado', header: 'Último estado' }
+        { key: 'nombre del derecho minero', header: 'Nombre del derecho minero' },
+        { key: 'nombre de minero en vías de formalización', header: 'Nombre de minero en vías de formalización' },
+        { key: 'relación', header: 'Relación' },
+        { key: 'estado', header: 'Estado' }
       ]
     },
     {
@@ -236,10 +236,11 @@ function CandidateProfile() {
       title: 'Título minero',
       data: candidate.ingemmet,
       columns: [
-        { key: 'año', header: 'Año' },
-        { key: 'numero', header: 'Número' },
-        { key: 'estado', header: 'Estado' },
-        { key: 'ubicacion', header: 'Ubicación' }
+        { key: 'departamento', header: 'Departamento' },
+        { key: 'distrito', header: 'Distrito' },
+        { key: 'concesionado', header: 'Concesionado' },
+        { key: 'tipo de relación', header: 'Relacionado a' },
+        { key: 'situación', header: 'Situación' },
       ]
     },
     {
@@ -247,10 +248,9 @@ function CandidateProfile() {
       title: 'Empresas',
       data: candidate.conflicto_intereses,
       columns: [
-        { key: 'nombre', header: 'Nombre' },
-        { key: 'ruc', header: 'RUC' },
-        { key: 'cargo', header: 'Cargo' },
-        { key: 'participacion', header: 'Participación' }
+        { key: 'organizacion', header: 'Nombre' },
+        { key: 'naturaleza de la participacion', header: 'Naturaleza de la participación' },
+        { key: 'presentado el', header: 'Año de presentación' }
       ]
     },
     {

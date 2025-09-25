@@ -26,8 +26,8 @@
   align-items: center;
   height: 90px;
   padding: 0 20px;
-  background: transparent;
-  border-bottom: 1px solid transparent;
+  background: rgba(0, 59, 34, 0.8);
+  border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
   left: 0;
@@ -157,13 +157,9 @@
   }
   
   .logo-center {
-    justify-content: flex-end;
     padding-right: 20px;
   }
-  
-  .menu-toggle {
-    color: #333; /* En móvil siempre visible */
-  }
+
 }
 
 /* Para dispositivos móviles en orientación horizontal */

@@ -116,9 +116,9 @@ function AppContent( { isHomePage } ) {
               </div>
             </div>
           </a>
-          <Footer />
         </div>
       )}
+      <Footer />
       <FooterGeneral />
     </div>
   );
