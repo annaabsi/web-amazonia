@@ -913,3 +913,12 @@
   background-size: 100% 50%; /* El fondo ocupará el 100% del ancho pero solo el 50% de la altura */
   position: relative; /* Necesario para posicionar correctamente el fondo */
 }
+
+.fuentes {
+  font-size: 11px;
+  padding: 0 10px;
+}
+
+.fuentes li {
+  margin-left: 12px;
+}

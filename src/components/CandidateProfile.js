@@ -225,8 +225,20 @@ function CandidateProfile() {
   // Definir las secciones de datos con sus respectivas columnas
   const sectionData = [
     {
+      key: 'ministerio_publico',
+      title: 'Investigaciones fiscales',
+      data: candidate.ministerio_publico,
+      columns: [
+        { key: 'año-ingreso', header: 'Año ingreso' },
+        { key: 'delito generico', header: 'Delito genérico investigado' },
+        { key: 'específico', header: 'Delito específico investigado' },
+        { key: 'último estado', header: 'Último estado' },
+        { key: 'n°caso', header: 'N° caso' },
+      ]
+    },
+    {
       key: 'reinfo',
-      title: 'Concesiones mineras por formalizar',
+      title: 'REINFO',
       data: candidate.reinfo,
       columns: [
         { key: 'nombre del derecho minero', header: 'Nombre del derecho minero' },
@@ -237,7 +249,7 @@ function CandidateProfile() {
     },
     {
       key: 'ingemmet',
-      title: 'Título minero',
+      title: 'INGEMMET',
       data: candidate.ingemmet,
       columns: [
         { key: 'nombre del derecho', header: 'Concesión' },
@@ -249,24 +261,12 @@ function CandidateProfile() {
     },
     {
       key: 'conflicto_intereses',
-      title: 'Empresas',
+      title: 'Empresas vinculadas',
       data: candidate.conflicto_intereses,
       columns: [
         { key: 'organizacion', header: 'Nombre' },
         { key: 'naturaleza de la participacion', header: 'Naturaleza de la participación' },
         { key: 'presentado el', header: 'Año de presentación' }
-      ]
-    },
-    {
-      key: 'ministerio_publico',
-      title: 'Investigaciones fiscales',
-      data: candidate.ministerio_publico,
-      columns: [
-        { key: 'año-ingreso', header: 'Año ingreso' },
-        { key: 'delito generico', header: 'Delito genérico investigado' },
-        { key: 'específico', header: 'Delito específico investigado' },
-        { key: 'último estado', header: 'Último estado' },
-        { key: 'n°caso', header: 'N° caso' },
       ]
     }
   ];
@@ -356,6 +356,12 @@ function CandidateProfile() {
           {/* Desktop view - buttons in a row with single content container below */}
           <div className="desktop-sections">
             <div className="section-buttons">
+              <button
+                className={`section-button ${activeSection === 'declaracion_jurada' ? 'active' : ''}`}
+                onClick={() => handleSectionClick('declaracion_jurada')}
+              >
+                Declaración de ingresos
+              </button>
               {sectionData.map(section => (
                 <button
                   key={section.key}
@@ -365,12 +371,6 @@ function CandidateProfile() {
                   {section.title}
                 </button>
               ))}
-              <button
-                className={`section-button ${activeSection === 'declaracion_jurada' ? 'active' : ''}`}
-                onClick={() => handleSectionClick('declaracion_jurada')}
-              >
-                Última declaración
-              </button>
             </div>
             
             <div className="desktop-content-container">
@@ -388,6 +388,24 @@ function CandidateProfile() {
           
           {/* Mobile view - buttons stacked with content below each */}
           <div className="mobile-sections">
+            <div className="mobile-section">
+              <button
+                className={`mobile-section-button ${mobileActiveSection === 'declaracion_jurada' ? 'active' : ''}`}
+                onClick={() => handleMobileSectionClick('declaracion_jurada')}
+              >
+                <span className="mobile-section-icon">{SectionIcons['declaracion_jurada']}</span>
+                Declaración de ingresos
+                <span className="mobile-toggle-icon">
+                  {mobileActiveSection === 'declaracion_jurada' ? '▲' : '▼'}
+                </span>
+              </button>
+              
+              {mobileActiveSection === 'declaracion_jurada' && (
+                <div className="mobile-content-container">
+                  <DeclaracionJuradaContent candidate={candidate} />
+                </div>
+              )}
+            </div>
             {sectionData.map(section => (
               <div key={section.key} className="mobile-section">
                 <button
@@ -412,31 +430,23 @@ function CandidateProfile() {
                 )}
               </div>
             ))}
-            
-            <div className="mobile-section">
-              <button
-                className={`mobile-section-button ${mobileActiveSection === 'declaracion_jurada' ? 'active' : ''}`}
-                onClick={() => handleMobileSectionClick('declaracion_jurada')}
-              >
-                <span className="mobile-section-icon">{SectionIcons['declaracion_jurada']}</span>
-                Última declaración
-                <span className="mobile-toggle-icon">
-                  {mobileActiveSection === 'declaracion_jurada' ? '▲' : '▼'}
-                </span>
-              </button>
-              
-              {mobileActiveSection === 'declaracion_jurada' && (
-                <div className="mobile-content-container">
-                  <DeclaracionJuradaContent candidate={candidate} />
-                </div>
-              )}
-            </div>
           </div>
           
           {/* <div className="legal-summary">
             <p>No registra antecedentes ni vínculos con actividades ilegales.</p>
           </div> */}
         </div>
+      </div>
+      <div className='fuentes'>
+        <p><b>Fuentes y fechas de consulta:</b></p>
+        <ul>
+          <li>La base de datos de Ingemmet fue descargada y consultada el día 22 de abril de 2025</li>
+          <li>La base de datos de Reinfo fue descargada y consultada el 1 de marzo de 2025</li>
+          <li>Las declaraciones juradas de ingresos fueron consultadas el 31 de marzo de 2025</li>
+          <li>Las declaraciones juradas de intereses fueron consultadas el 31 de marzo de 2025</li>
+          <li>Las investigaciones fiscales por el Ministerio Público fueron consultadas entre diciembre de 2024 y marzo de 2025</li>
+          <li>Los datos generales fueron generados en diciembre de 2024</li>
+        </ul>
       </div>
     </div>
     <Footer />
