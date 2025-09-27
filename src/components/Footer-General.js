@@ -69,7 +69,7 @@ const FooterGeneral = () => {
               </span>
             </div>
           </div>
-          <div className="footer-partners">
+          {/* <div className="footer-partners">
             <ul className="footer-link-list">
               <li className="footer-link-item">
                 <a href="https://amazonunderworld.org/es.html" target="_blank" rel="noopener noreferrer">
@@ -82,7 +82,7 @@ const FooterGeneral = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -240,8 +240,8 @@ function CandidateProfile() {
       title: 'Título minero',
       data: candidate.ingemmet,
       columns: [
+        { key: 'nombre del derecho', header: 'Concesión' },
         { key: 'departamento', header: 'Departamento' },
-        { key: 'distrito', header: 'Distrito' },
         { key: 'concesionado', header: 'Concesionado' },
         { key: 'tipo de relación', header: 'Relacionado a' },
         { key: 'situación', header: 'Situación' },
@@ -262,10 +262,11 @@ function CandidateProfile() {
       title: 'Investigaciones fiscales',
       data: candidate.ministerio_publico,
       columns: [
-        { key: 'n°caso', header: 'N° caso' },
         { key: 'año-ingreso', header: 'Año ingreso' },
-        { key: 'delito generico', header: 'Delito genérico' },
-        { key: 'último estado', header: 'Último estado' }
+        { key: 'delito generico', header: 'Delito genérico investigado' },
+        { key: 'específico', header: 'Delito específico investigado' },
+        { key: 'último estado', header: 'Último estado' },
+        { key: 'n°caso', header: 'N° caso' },
       ]
     }
   ];
