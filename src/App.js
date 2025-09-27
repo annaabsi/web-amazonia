@@ -107,11 +107,11 @@ function AppContent( { isHomePage } ) {
       <ProfileBoard profiles={profiles} />
       {isHomePage && (
         <div>
-          <a href='https://almargen-media.com/la-autora-del-unico-sustento-de-la-ley-de-carcel-para-menores-tiene-un-audio-con-cesar-hinostroza-y-fue-homenajeada-por-chibolin/'>
+          <a href='https://almargen-media.com/metodologia-y-transparencia-como-elaboramos-buscaamazonia/'>
             <div className='nota-home'>
-              <img src="https://almargen-media.com/wp-content/uploads/2025/08/Autora-proyecto-ley-32330.webp" alt="Logo Amazonia" className='logo-amazonia' />
+              <img src="https://almargen-media.com/wp-content/uploads/2025/09/Metodologia-y-transparencia-%C2%BFcomo-elaboramos-BuscaAmazonia.webp" alt="Como elaboramos busca amazonia" className='logo-amazonia' />
               <div>
-                <p>Tras las huellas del contrabando de tortugas y sus huevos en la selva amazónica de Bolivia</p>
+                <p>Metodología y transparencia: ¿cómo elaboramos BuscaAmazonía?</p>
                 <span>ver más</span>
               </div>
             </div>

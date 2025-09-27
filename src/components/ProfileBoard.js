@@ -88,8 +88,14 @@ const ProfileBoard = ({ profiles = [] }) => {
     setPageRangeStart(1);
   };
 
-  const handleSearch = () => {
-    console.log('Searching with filters:', filters);
+  const handleClear = () => {
+    setFilters({
+      departamento: '',
+      provincia: '',
+      distrito: ''
+    });
+    setCurrentPage(1);
+    setPageRangeStart(1);
   };
 
   const handleViewProfile = (profileId) => {
@@ -193,8 +199,8 @@ const ProfileBoard = ({ profiles = [] }) => {
           
           {/* Botones de búsqueda y limpiar */}
           <div className="filter-buttons">
-            <button className="search-button" onClick={handleSearch}>
-              <span>Buscar</span>
+            <button className="search-button" onClick={handleClear}>
+              <span>Limpiar</span>
             </button>
           </div>
         </div>

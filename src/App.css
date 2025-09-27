@@ -5,6 +5,7 @@
   background: #FAFAF8;
   box-shadow: 0 4px 10.8px -5px rgba(0, 0, 0, 0.25);
   padding: 32px;
+  color: black;
 }
 
 .nota-home img, .nota-home > div  {
@@ -19,4 +20,8 @@
 
 .nota-home p {
   font-size: 20px;
+}
+
+.nota-home span {
+  color: gray;
 }
