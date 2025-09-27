@@ -3,59 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import HeaderGeneral from './Header-General';
 import FooterGeneral from './Footer-General';
 import Footer from './Footer';
+import { obtenerDatosRiesgo, formatNameForURL } from '../utils/riskUtils';
 import './CandidateProfile.css';
-
-// Función para convertir un nombre a formato URL (minúsculas con guiones)
-function formatNameForURL(name) {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9-]/g, '');
-}
-
-// Función para obtener los datos de riesgo según la categoría del perfil
-function obtenerDatosRiesgo(categoria) {
-  const mapeoRiesgo = {
-    "Ningún delito": {
-      riskLevel: 'Ningún delito',
-      riskColor: '#00B050',
-      progressWidth: '0%'
-    },
-    "1 a 3 delitos": {
-      riskLevel: '1 a 3 delitos',
-      riskColor: '#92D050',
-      progressWidth: '20%'
-    },
-    "4 a 5 delitos": {
-      riskLevel: '4 a 5 delitos',
-      riskColor: '#FFFF00',
-      progressWidth: '40%'
-    },
-    "6 a 9 delitos": {
-      riskLevel: '6 a 9 delitos',
-      riskColor: '#FFC000',
-      progressWidth: '60%'
-    },
-    "10 a 20 delitos": {
-      riskLevel: '10 a 20 delitos',
-      riskColor: '#FF5050',
-      progressWidth: '80%'
-    },
-    "21 o más delitos": {
-      riskLevel: '21 o más delitos',
-      riskColor: '#C00000',
-      progressWidth: '100%'
-    }
-  };
-  
-  return mapeoRiesgo[categoria] || {
-    riskLevel: categoria || 'Datos no disponibles',
-    riskColor: '#CCCCCC',
-    progressWidth: '10%'
-  };
-}
 
 // Iconos para cada sección (solo móvil)
 const SectionIcons = {
@@ -217,7 +166,8 @@ function CandidateProfile() {
     );
   }
 
-  const riskData = obtenerDatosRiesgo(candidate.categoría);
+  // En la parte donde obtienes los datos del riesgo:
+  const riskData = obtenerDatosRiesgo(candidate["número de delitos"]);
   const avatarSrc = candidate.dni
     ? `/web-amazonia/imagenes-bn/${candidate.dni}.jpg`
     : candidate.avatar || '/web-amazonia/imagenes-bn/default.jpg';

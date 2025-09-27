@@ -7,62 +7,8 @@ import HeaderGeneral from './components/Header-General';
 import FooterGeneral from './components/Footer-General';
 import IntroText from './components/IntroText';
 import Footer from './components/Footer';
+import { obtenerDatosRiesgo, formatNameForURL } from './utils/riskUtils';
 import './App.css';
-
-// Función para convertir un nombre a formato URL (minúsculas con guiones)
-function formatNameForURL(name) {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9-]/g, '');
-}
-
-// Función para obtener los datos de riesgo según la categoría del perfil
-function obtenerDatosRiesgo(categoria, numeroDelitos) {
-  // Mapeo de categorías a los datos de riesgo según las nuevas reglas
-  const mapeoRiesgo = {
-    "Ningún delito": {
-      riskLevel: 'Ningún delito',
-      riskColor: '#00B050', // Verde puro
-      progressWidth: '0%'
-    },
-    "1 a 3 delitos": {
-      riskLevel: '1 a 3 delitos',
-      riskColor: '#92D050', // Verde claro
-      progressWidth: '20%'
-    },
-    "4 a 5 delitos": {
-      riskLevel: '4 a 5 delitos',
-      riskColor: '#FFFF00', // Amarillo
-      progressWidth: '40%'
-    },
-    "6 a 9 delitos": {
-      riskLevel: '6 a 9 delitos',
-      riskColor: '#FFC000', // Naranja
-      progressWidth: '60%'
-    },
-    "10 a 20 delitos": {
-      riskLevel: '10 a 20 delitos',
-      riskColor: '#FF5050', // Rojo claro
-      progressWidth: '80%'
-    },
-    "21 o más delitos": {
-      riskLevel: '21 o más delitos',
-      riskColor: '#C00000', // Rojo intenso
-      progressWidth: '100%'
-    }
-  };
-  
-  // Si la categoría no está en el mapeo, devolvemos un valor por defecto
-  return mapeoRiesgo[categoria] || {
-    riskLevel: categoria || 'Datos no disponibles',
-    riskColor: '#CCCCCC',
-    progressWidth: '10%',
-    numeroDelitos: numeroDelitos || 'N/A'
-  };
-}
 
 function AppContent( { isHomePage } ) {
   const [profiles, setProfiles] = useState([]);
@@ -71,8 +17,10 @@ function AppContent( { isHomePage } ) {
     fetch('/web-amazonia/perfiles.json')
       .then(response => response.json())
       .then(data => {
+        // En la transformación de datos dentro del useEffect:
         const transformed = data.map(profile => {
-          const riesgo = obtenerDatosRiesgo(profile.categoría, profile["número de delitos"]);
+          // Ahora pasamos solo el número de delitos, no la categoría
+          const riesgo = obtenerDatosRiesgo(profile["número de delitos"]);
           return {
             dni: profile.dni,
             name: profile["nombres y apellidos del alcalde"],
@@ -116,6 +64,11 @@ function AppContent( { isHomePage } ) {
               </div>
             </div>
           </a>
+        </div>
+      )}
+      {!isHomePage && (
+        <div className="buscador-texto">
+          <p>Conoce más en: <a href='https://almargen-media.com/web-amazonia/'>https://almargen-media.com/web-amazonia/</a></p>
         </div>
       )}
       <Footer />
