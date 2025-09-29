@@ -14,7 +14,7 @@ function AppContent( { isHomePage } ) {
   const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
-    fetch('/web-amazonia/perfiles.json')
+    fetch('/busca-amazonia/perfiles.json')
       .then(response => response.json())
       .then(data => {
         // En la transformación de datos dentro del useEffect:
@@ -68,7 +68,7 @@ function AppContent( { isHomePage } ) {
       )}
       {!isHomePage && (
         <div className="buscador-texto">
-          <p>Conoce más en: <a href='https://almargen-media.com/web-amazonia/'>https://almargen-media.com/web-amazonia/</a></p>
+          <p>Conoce más en: <a href='https://almargen-media.com/busca-amazonia/'>https://almargen-media.com/busca-amazonia/</a></p>
         </div>
       )}
       <Footer />
@@ -79,7 +79,7 @@ function AppContent( { isHomePage } ) {
 
 function App() {
   return (
-    <Router basename="/web-amazonia">
+    <Router basename="/busca-amazonia">
       <div className="app">
         <Routes>
           <Route path="/" element={<AppContent isHomePage={true} />} />

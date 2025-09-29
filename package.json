@@ -1,5 +1,5 @@
 {
-  "name": "web-amazonia",
+  "name": "busca-amazonia",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://annaabsi.github.io/web-amazonia"
+  "homepage": "https://almargen-media.com/busca-amazonia"
 }

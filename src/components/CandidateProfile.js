@@ -134,7 +134,7 @@ function CandidateProfile() {
 
   useEffect(() => {
     // Cargar todos los datos y buscar por nombre formateado
-    fetch('/web-amazonia/perfiles.json')
+    fetch('/busca-amazonia/perfiles.json')
       .then(response => response.json())
       .then(data => {
         // Buscar el candidato cuyo nombre formateado coincida con el parámetro de la URL
@@ -169,8 +169,8 @@ function CandidateProfile() {
   // En la parte donde obtienes los datos del riesgo:
   const riskData = obtenerDatosRiesgo(candidate["número de delitos"]);
   const avatarSrc = candidate.dni
-    ? `/web-amazonia/imagenes-bn/${candidate.dni}.jpg`
-    : candidate.avatar || '/web-amazonia/imagenes-bn/default.jpg';
+    ? `/busca-amazonia/imagenes-bn/${candidate.dni}.jpg`
+    : candidate.avatar || '/busca-amazonia/imagenes-bn/default.jpg';
 
   // Definir las secciones de datos con sus respectivas columnas
   const sectionData = [
@@ -243,7 +243,7 @@ function CandidateProfile() {
     <div className="candidate-profile-page">
       <div className="profile-header">
         <Link to="/" className="back-button">
-          <img src="/web-amazonia/House.png" alt="Volver" />
+          <img src="/busca-amazonia/House.png" alt="Volver" />
         </Link>
       </div>
       

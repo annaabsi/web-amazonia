@@ -16,8 +16,8 @@ function ProfileCard({ profile, PaperIcon }) {
   
   // Construir la ruta del avatar usando el dni
   const avatarSrc = profile.dni
-    ? `/web-amazonia/imagenes-bn/${profile.dni}.jpg`
-    : profile.avatar || '/web-amazonia/imagenes-bn/default.jpg';
+    ? `/busca-amazonia/imagenes-bn/${profile.dni}.jpg`
+    : profile.avatar || '/busca-amazonia/imagenes-bn/default.jpg';
 
   const handleViewProfile = () => {
     const urlName = formatNameForURL(profile.name);
