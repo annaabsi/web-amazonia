@@ -4,9 +4,9 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 20px; 
   font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
-  margin-top: 70px;
+  margin-top: 15px; /*cambio borrando el margin-top de 70px  a 15px*/
 }
 
 .profile-board-container {
