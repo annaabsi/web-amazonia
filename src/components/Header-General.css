@@ -111,6 +111,14 @@
   transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+  .logo-center img {
+   
+    height: 67px;
+  
+  }
+}
+
 .social-right {
   display: flex;
   justify-content: flex-end;

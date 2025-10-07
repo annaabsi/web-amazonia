@@ -177,7 +177,12 @@ function CandidateProfile() {
     {
       key: 'ministerio_publico',
       title: 'Investigaciones fiscales',
-      data: candidate.ministerio_publico,
+      data: candidate.ministerio_publico? [...candidate.ministerio_publico].sort((a, b) => {
+        const yearA = parseInt(a["año-ingreso"]) || 0;
+        const yearB = parseInt(b["año-ingreso"]) || 0;
+        return yearB - yearA; // Descendente
+      })
+    : [],
       columns: [
         { key: 'año-ingreso', header: 'Año ingreso' },
         { key: 'delito generico', header: 'Delito genérico investigado' },
@@ -390,12 +395,7 @@ function CandidateProfile() {
       <div className='fuentes'>
         <p><b>Fuentes y fechas de consulta:</b></p>
         <ul>
-          <li>La base de datos de Ingemmet fue descargada y consultada el día 22 de abril de 2025</li>
-          <li>La base de datos de Reinfo fue descargada y consultada el 1 de marzo de 2025</li>
-          <li>Las declaraciones juradas de ingresos fueron consultadas el 31 de marzo de 2025</li>
-          <li>Las declaraciones juradas de intereses fueron consultadas el 31 de marzo de 2025</li>
-          <li>Las investigaciones fiscales por el Ministerio Público fueron consultadas entre diciembre de 2024 y marzo de 2025</li>
-          <li>Los datos generales fueron generados en diciembre de 2024</li>
+          <li>La base de datos original fue recopilada durante el periodo de diciembre de 2024 y abril de 2025, y será constantemente actualizada según la Ley de Transparencia y Acceso a la Información Pública N°27806 lo permita. Las fuentes consultadas fueron REINFO, Ingemmet, Jurado Nacional de Elecciones (JNE) y Ministerio Público de la Nación.</li>
         </ul>
       </div>
     </div>

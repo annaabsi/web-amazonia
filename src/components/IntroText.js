@@ -16,8 +16,7 @@ const IntroText = () => {
         <hr></hr>
         <div className="descubre-section">
           <p className="descubre-text">
-            Descubre si tu alcalde o gobernador tienen
-            vínculos con <span className="green-text">delitos ambientales o economías ilícitas
+            Descubre si tu alcalde o gobernador tiene investigaciones vinculadas a <span className="green-text">delitos ambientales o economías ilícitas
             que devastan la amazonía</span>
           </p>
         </div>
