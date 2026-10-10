@@ -26,8 +26,8 @@
   align-items: center;
   height: 90px;
   padding: 0 20px;
-  background: rgba(0, 59, 34, 0.8);
-  border-bottom: 1px solid rgba(0, 59, 34, 0.8);
+  background: #743045;
+  border-bottom: #743045;
   position: fixed;
   top: 0;
   left: 0;

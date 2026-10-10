@@ -17,10 +17,10 @@ const ProfileBoard = ({ profiles = [] }) => {
   // Extraer opciones únicas de los perfiles con filtros dependientes
   const dropdownOptions = useMemo(() => {
     // Departamentos (siempre todos)
-    const departamentos = [...new Set(profiles
-      .map(p => p.departamento)
-      .filter(Boolean)
-      .sort())];
+    // const departamentos = [...new Set(profiles
+    //   .map(p => p.departamento)
+    //   .filter(Boolean)
+    //   .sort())];
     
     // Provincias (depende del departamento seleccionado)
     const provincias = [...new Set(profiles
@@ -42,7 +42,7 @@ const ProfileBoard = ({ profiles = [] }) => {
       .sort())];
     
     return {
-      departamento: departamentos,
+      // departamento: departamentos,
       provincia: provincias,
       distrito: distritos
     };
@@ -71,9 +71,9 @@ const ProfileBoard = ({ profiles = [] }) => {
     
     if (dropdownName === 'departamento') {
       // Al cambiar departamento, resetear provincia y distrito
-      newFilters.departamento = value;
-      newFilters.provincia = '';
-      newFilters.distrito = '';
+      // newFilters.departamento = value;
+      // newFilters.provincia = '';
+      // newFilters.distrito = '';
     } else if (dropdownName === 'provincia') {
       // Al cambiar provincia, resetear distrito
       newFilters.provincia = value;
@@ -160,7 +160,8 @@ const ProfileBoard = ({ profiles = [] }) => {
       <div className="profile-board-container">
         {/* Filtros */}
         <div className="search-section">
-          {['departamento', 'provincia', 'distrito'].map((dropdown) => (
+          {/* {['departamento', 'provincia', 'distrito'].map((dropdown) => ( */}
+          {['provincia', 'distrito'].map((dropdown) => (
             <div className="filter-dropdown" key={dropdown}>
               <div
                 className="dropdown-container"
@@ -200,7 +201,7 @@ const ProfileBoard = ({ profiles = [] }) => {
           {/* Botones de búsqueda y limpiar */}
           <div className="filter-buttons">
             <button className="search-button" onClick={handleClear}>
-              <span>Limpiar</span>
+              <span>Buscar</span>
             </button>
           </div>
         </div>

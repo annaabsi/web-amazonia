@@ -1,25 +1,27 @@
 import React from 'react';
-import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-section">
-        <h4>Investigación:</h4>
-        <p>Pamela Huerta y José Luis Huacles</p>
-        <h4>Coordinación general:</h4>
-        <p>Alonso Marín Jimenez</p>
-        <h4>Diseño web:</h4>
-        <p>Jazmín Ceras</p>
-        <h4>Desarrollo:</h4>
-        <p>Anna Absi y José Luis Huacles (coordinación)</p>
-      </div>
-      
-      {/* <div className="footer-section">
-        <h4>Fondos de Financiamiento:</h4>
-        <p>Lorem ipsum</p>
-      </div> */}
-    </footer>
+    <section className="ba-credits">
+      <p>
+        <strong>Investigación dirigida</strong> por <i>Pamela
+        Huerta Bustamante</i>. <strong>Coordinación general</strong>{' '}
+        a cargo de <i>Alonso Marín</i>.
+        <br />
+        <strong>El procesamiento y análisis de datos</strong>{' '}
+        lo realizó <i>José Luis Huacles</i>. <strong>Diseño Web</strong>{' '}
+        por <i>Jazmín Ceras</i>. <strong>Desarrollo web</strong>{' '}
+        por <i>Anna Absi</i> y <i>José Luis Huacles</i>.{' '}
+        <strong>Ilustraciones</strong> de <i>rr archivo</i>.{' '}
+        <strong>Verificación de datos</strong> a cargo de
+        <i> Al Margen – periodismo</i>.
+      </p>
+
+      <p>
+        Este reportaje fue posible gracias al apoyo de{' '}
+        <strong><i>The Resilience Collaborative.</i></strong>
+      </p>
+    </section>
   );
 };
 

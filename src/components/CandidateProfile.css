@@ -17,7 +17,7 @@
   /* display: inline-flex;
   align-items: center;
   padding: 10px 16px;
-  background: #396541;
+  background: #743045;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -26,7 +26,7 @@
   position: fixed;
   right: 2px;
   top: 50vh;
-  background-color: #396541;
+  background-color: #743045;
   height: 60px;
   width: 60px;
   border-radius: 30px;
@@ -76,7 +76,7 @@
 }
 
 .candidate-basic-info h1 {
-  color: #396541;
+  color: #743045;
   margin: 0;
   font-size: 24px;
   font-weight: 700;
@@ -152,7 +152,7 @@
 }
 
 .candidate-details-section h2 {
-  color: #396541;
+  color: #743045;
   margin: 0 0 20px 0;
   font-size: 22px;
   font-weight: 600;
@@ -175,7 +175,7 @@
   padding: 12px 15px;
   text-align: left;
   font-weight: 600;
-  color: #396541;
+  color: #743045;
   border-bottom: 1px solid #E9E9E8;
 }
 
@@ -196,7 +196,7 @@
   background: #F9F9F9;
   padding: 15px;
   border-radius: 8px;
-  border-left: 4px solid #396541;
+  border-left: 4px solid #743045;
 }
 
 .legal-summary p {
@@ -249,7 +249,7 @@
 .candidate-not-found a {
   display: inline-block;
   margin-top: 20px;
-  color: #396541;
+  color: #743045;
   text-decoration: none;
   font-weight: 500;
 }
@@ -423,13 +423,13 @@
   padding: 1rem;
   background-color: #f8f9fa;
   border-radius: 8px;
-  border-left: 4px solid #396541;
+  border-left: 4px solid #743045;
 }
 
 /* Estilos responsivos para móvil */
 @media (max-width: 768px) {
   .data-section-header {
-    background-color: #396541;
+    background-color: #743045;
     color: white;
   }
   
@@ -579,7 +579,7 @@
   padding: 1rem;
   background-color: #f8f9fa;
   border-radius: 8px;
-  border-left: 4px solid #396541;
+  border-left: 4px solid #743045;
   grid-column: 1 / -1;
 }
 
@@ -594,7 +594,7 @@
   }
   
   .data-section-header {
-    background-color: #396541;
+    background-color: #743045;
     color: white;
     position: relative;
   }
@@ -693,7 +693,7 @@
   flex: 1;
   min-width: 180px;
   padding: 0.8rem 1rem;
-  background-color: #396541;
+  background-color: #743045;
   color: white;
   border: 1px solid #e1e4e8;
   border-radius: 6px;
@@ -759,7 +759,7 @@
   padding: 1rem;
   background-color: #f8f9fa;
   border-radius: 8px;
-  border-left: 4px solid #396541;
+  border-left: 4px solid #743045;
 }
 
 /* Estilos responsivos para móvil */
@@ -782,7 +782,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 1rem;
-    background-color: #396541;
+    background-color: #743045;
     color: white;
     border: none;
     border-radius: 6px;
@@ -909,7 +909,7 @@
 }
 
 .bg-1 {
-  background: url('../../public/bg-1.png') no-repeat top center;
+  background: url('../../public/bg-1.jpg') no-repeat top center;
   background-size: 100% 50%; /* El fondo ocupará el 100% del ancho pero solo el 50% de la altura */
   position: relative; /* Necesario para posicionar correctamente el fondo */
 }

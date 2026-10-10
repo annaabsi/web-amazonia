@@ -1,13 +1,73 @@
-import React from 'react';
+
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+  const [search, setSearch] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    if (search.trim()) {
+      navigate(`/buscador?search=${encodeURIComponent(search.trim())}`);
+    } else {
+      navigate('/buscador');
+    }
+  };
+
   return (
     <header className="header">
       <div className="header-content">
-        <h1 className="header-title">BUSCA AMAZONÍA</h1>
-        <p className="header-subtitle">¿Quiénes protegen la Amazonia?</p>
-        <p className="header-bajada">Al Margen presenta un buscador web que permite rastrear los vínculos de gobernadores regionales y alcaldes provinciales y distritales para transparentar cómo el poder local —en regiones como Amazonas, San Martín, Loreto, Ucayali y Madre de Dios— se entrelaza con la destrucción de bosques y ríos. Porque detrás de cada concesión irregular o de cada omisión deliberada, lo que se juega no es solo la legalidad: es el futuro de la Amazonía.</p>
+        <h1 className="header-title">
+          <span>Busca</span>
+          <br />
+          <span>Amazonía</span>
+        </h1>
+
+        <p className="header-subtitle">
+          Rastrea autoridades, territorios y conexiones
+          que pueden revelar cómo se disputa el poder
+          detrás de los intereses en la Amazonía Peruana.
+        </p>
+
+        <form className="ba-search" onSubmit={handleSubmit}>
+          <svg
+            className="ba-search-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle
+              cx="10.8"
+              cy="10.8"
+              r="6.3"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+            />
+            <path
+              d="M15.5 15.5 20 20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+            />
+          </svg>
+
+          <input
+            type="search"
+            className="ba-search-input"
+            placeholder="Busca un alcalde, región o provincia"
+            aria-label="Busca un alcalde, región o provincia"
+            value={search}
+            onChange={event => setSearch(event.target.value)}
+          />
+
+          <button className="ba-search-button" type="submit">
+            Buscar
+          </button>
+        </form>
       </div>
     </header>
   );

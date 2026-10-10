@@ -1,13 +1,16 @@
 /* Footer-General.css */
 .footer-general {
-  background-color: #132C33;
+  background-color: #743045;
   padding: 40px 20px;
+  box-sizing: border-box;
   color: #ffffff;
 }
 
 .footer-container {
   display: flex;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
   margin: 0 auto;
   gap: 40px;
 }
