@@ -7,15 +7,37 @@ const Header = () => {
   const [search, setSearch] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = event => {
-    event.preventDefault();
+const handleSubmit = event => {
+  event.preventDefault();
 
-    if (search.trim()) {
-      navigate(`/buscador?search=${encodeURIComponent(search.trim())}`);
-    } else {
-      navigate('/buscador');
-    }
-  };
+  const query = search.trim();
+
+  const regiones = [
+    'Amazonas',
+    'Loreto',
+    'San Martín',
+    'Ucayali',
+    'Madre de Dios'
+  ];
+
+  const region = regiones.find(
+    nombre =>
+      nombre.normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase() ===
+      query.normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+  );
+
+  if (region) {
+    navigate(`/buscador?departamento=${encodeURIComponent(region)}`);
+  } else if (query) {
+    navigate(`/buscador?search=${encodeURIComponent(query)}`);
+  } else {
+    navigate('/buscador');
+  }
+};
 
   return (
     <header className="header">

@@ -1,8 +1,7 @@
 /* Candidate Profile Page Styles */
 .candidate-profile-page {
   max-width: 1000px;
-  margin: 120px auto 0;
-  padding: 20px;
+  padding: 80px 0;
   font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
   color: #333;
   background: #FAFAF8;
@@ -921,4 +920,179 @@
 
 .fuentes li {
   margin-left: 12px;
+}
+
+/* Volver a resultados */
+.back-results {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 90px 0 34px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #743045;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-results:hover {
+  color: #542033;
+}
+
+
+.back-results-arrow {
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.back-results:hover .back-results-arrow {
+  transform: none;
+}
+
+/* Evitar que el botón de inicio interfiera con el de regreso */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.profile-header .back-results {
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .back-results {
+    margin: 70px 0 26px;
+    font-size: 13px;
+  }
+
+  .profile-header {
+    align-items: flex-start;
+  }
+}
+
+
+/* Integración visual con la página principal */
+.candidate-profile-page {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  padding: 80px max(24px, calc((100% - 1000px) / 2));
+  background: #efddd7;
+  color: #24191b;
+}
+
+/* Tarjeta principal del perfil */
+.candidate-profile-card {
+  background: #FAFAF8;
+  border: 1px solid rgba(119, 54, 76, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 10.8px -5px rgba(0, 0, 0, 0.18);
+}
+
+.candidate-profile-card.bg-1 {
+  background: #e9d3cd url('../../public/bg-1.jpg') no-repeat top center;
+  background-size: 100% 50%;
+  position: relative;
+}
+
+/* Información del candidato */
+.candidate-basic-info {
+  background: #FAFAF8;
+  border: 1px solid #ead8d4;
+  border-radius: 12px;
+}
+
+.candidate-basic-info h1,
+.candidate-details-section h2 {
+  color: #77364c;
+}
+
+.candidate-avatar-large img {
+  border-color: #e9d3cd;
+}
+
+/* Botones de las categorías */
+.section-button,
+.mobile-section-button {
+  background-color: #77364c;
+  border-color: #77364c;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.section-button:hover,
+.mobile-section-button:hover {
+  background-color: #572337;
+}
+
+.section-button.active {
+  background-color: #1F3824;
+  border-color: #1F3824;
+}
+
+/* Paneles y tablas */
+.desktop-content-container,
+.mobile-content-container {
+  background: #FAFAF8;
+  border-color: #ead8d4;
+}
+
+.data-table th {
+  background-color: #f2dfdc;
+  color: #77364c;
+}
+
+.data-table td {
+  background-color: #FAFAF8;
+  border-bottom-color: #ead8d4;
+}
+
+.data-table tr:nth-child(even) td {
+  background-color: #fdf4f0;
+}
+
+.mobile-section-button.active {
+  background-color: #572337;
+}
+
+/* Fuentes */
+.fuentes {
+  box-sizing: border-box;
+  padding: 24px 10px;
+  color: #57454a;
+}
+
+.fuentes p {
+  color: #77364c;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 700px) {
+  .candidate-profile-page {
+    padding: 15px 20px;
+  }
+
+  .candidate-profile-card {
+    border-radius: 12px;
+  }
+
+  .candidate-basic-info {
+    padding: 20px 14px;
+  }
+
+  .candidate-basic-info h1 {
+    font-size: 22px;
+  }
+
+  .fuentes {
+    padding: 20px 4px;
+  }
 }

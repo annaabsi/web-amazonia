@@ -7,7 +7,14 @@ import HeaderGeneral from './components/Header-General';
 import FooterGeneral from './components/Footer-General';
 import Footer from './components/Footer';
 import AmazoniaMap from './components/AmazoniaMap';
+import ScrollToTop from './components/ScrollToTop';
 import { obtenerDatosRiesgo, formatNameForURL } from './utils/riskUtils';
+
+import iconoAutoridades from './components/icons/icono-autoridades.svg';
+import iconoVinculos from './components/icons/icono-vinculos.svg';
+import iconoActividades from './components/icons/icono-actividades.svg';
+import iconoTerritorios from './components/icons/icono-territorios.svg';
+
 import './App.css';
 
 function AppContent({ isHomePage }) {
@@ -62,24 +69,22 @@ function AppContent({ isHomePage }) {
                 </div>
 
                 <h2>
-                  ¿Quiénes ostentan el poder en la{' '}
-                  <span>Amazonía?</span>
+                  ¿Quiénes ostentan el poder en la <span>Amazonía?</span>
                 </h2>
 
                 <p>
-                  Hay senadores investigados por lavado de activos
-                  y alcaldes procesados por narcotráfico.{' '}
-                  <strong>Busca Amazonía</strong> rastrea al poder
-                  político y sus conexiones con las actividades
+                  Hay senadores investigados por lavado de activos y alcaldes
+                  procesados por narcotráfico. <strong>Busca Amazonía</strong>{' '}
+                  rastrea al poder político y sus conexiones con las actividades
                   que amenazan el futuro de la selva amazónica peruana.
                 </p>
 
-                <a className="ba-outline-button" href="#mapa">
-                  Ver mapa interactivo <span>→</span>
-                </a>
+                <div className="ba-outline-button">
+                  Dar click en el mapa interactivo <span>→</span>
+                </div>
               </div>
 
-              <div className="ba-map-container" id="mapa">
+              <div className="ba-map-container">
                 <AmazoniaMap />
               </div>
             </section>
@@ -95,51 +100,55 @@ function AppContent({ isHomePage }) {
                 </h2>
 
                 <p>
-                  En <strong>Amazonas, San Martín, Loreto, Ucayali
-                  y Madre de Dios</strong>, políticos y sus círculos
-                  cercanos deciden sobre territorios y recursos
-                  críticos, mientras sus intereses permanecen fuera
-                  de la mirada pública. Busca Amazonía es una
-                  herramienta para rastrear al poder político y sus
-                  conexiones con las actividades que amenazan el
-                  futuro de la Amazonía.
+                  En <strong>Amazonas, San Martín, Loreto, Ucayali y Madre de
+                  Dios</strong>, políticos y sus círculos cercanos deciden sobre
+                  territorios y recursos críticos, mientras sus intereses
+                  permanecen fuera de la mirada pública. Busca Amazonía es una
+                  herramienta para rastrear al poder político y sus conexiones
+                  con las actividades que amenazan el futuro de la Amazonía.
                 </p>
               </div>
 
               <div className="ba-categories">
                 <article className="ba-category">
-                  <div className="ba-category-icon">♙</div>
+                  <div className="ba-category-icon">
+                    <img src={iconoAutoridades} alt="" />
+                  </div>
                   <h3>Autoridades</h3>
                   <p>
-                    Gobernadores, alcaldes, congresistas y otras
-                    autoridades electas.
+                    Gobernadores, alcaldes, congresistas y otras autoridades
+                    electas.
                   </p>
                 </article>
 
                 <article className="ba-category">
-                  <div className="ba-category-icon">⌘</div>
+                  <div className="ba-category-icon">
+                    <img src={iconoVinculos} alt="" />
+                  </div>
                   <h3>Vínculos</h3>
                   <p>
-                    Redes de personas, empresas y organizaciones
-                    relacionadas.
+                    Redes de personas, empresas y organizaciones relacionadas.
                   </p>
                 </article>
 
                 <article className="ba-category">
-                  <div className="ba-category-icon">♧</div>
+                  <div className="ba-category-icon">
+                    <img src={iconoActividades} alt="" />
+                  </div>
                   <h3>Actividades</h3>
                   <p>
-                    Minería, hidrocarburos, forestal, entre otras
-                    actividades clave.
+                    Minería, hidrocarburos, forestal, entre otras actividades
+                    clave.
                   </p>
                 </article>
 
                 <article className="ba-category">
-                  <div className="ba-category-icon">⌖</div>
+                  <div className="ba-category-icon">
+                    <img src={iconoTerritorios} alt="" />
+                  </div>
                   <h3>Territorios</h3>
                   <p>
-                    Descubre dónde operan y en qué regiones
-                    se concentran.
+                    Descubre dónde operan y en qué regiones se concentran.
                   </p>
                 </article>
               </div>
@@ -160,6 +169,7 @@ function App() {
   return (
     <Router basename="/busca-amazonia">
       <div className="app">
+        <ScrollToTop />
         <Routes>
           <Route
             path="/"

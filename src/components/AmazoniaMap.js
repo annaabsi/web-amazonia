@@ -1,5 +1,6 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const REGIONS = {
   AMAZONAS: {
@@ -105,6 +106,8 @@ function geometryToPath(geometry, project) {
 }
 
 export default function AmazoniaMap() {
+  const navigate = useNavigate();
+
   const [geoData, setGeoData] = useState(null);
   const [error, setError] = useState(false);
   const [activeRegion, setActiveRegion] = useState(null);
@@ -117,6 +120,7 @@ export default function AmazoniaMap() {
         if (!response.ok) {
           throw new Error('No se pudo cargar el GeoJSON');
         }
+
         return response.json();
       })
       .then(data => {
@@ -124,6 +128,7 @@ export default function AmazoniaMap() {
       })
       .catch(err => {
         console.error('Error cargando el mapa:', err);
+
         if (active) setError(true);
       });
 
@@ -193,6 +198,12 @@ export default function AmazoniaMap() {
 
   const selected = activeRegion ? REGIONS[activeRegion] : null;
 
+  const handleRegionClick = region => {
+    navigate(
+      `/buscador?departamento=${encodeURIComponent(region.name)}`
+    );
+  };
+
   return (
     <div
       className="ba-map-interactive"
@@ -230,7 +241,13 @@ export default function AmazoniaMap() {
               }}
               onFocus={() => setActiveRegion(id)}
               onBlur={() => setActiveRegion(null)}
-              onClick={() => setActiveRegion(id)}
+              onClick={() => handleRegionClick(region)}
+              onKeyDown={event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  handleRegionClick(region);
+                }
+              }}
             />
           );
         })}
@@ -249,6 +266,7 @@ export default function AmazoniaMap() {
                 stroke="#F4E7E2"
                 strokeWidth="1"
               />
+
               <text
                 x={x}
                 y={y - 9}
@@ -265,8 +283,21 @@ export default function AmazoniaMap() {
       {selected && (
         <aside
           className="ba-region-card"
-          style={selected.cardPosition}
+          style={{
+            ...selected.cardPosition,
+            cursor: 'pointer',
+          }}
           aria-live="polite"
+          onClick={() => handleRegionClick(selected)}
+          role="button"
+          tabIndex={0}
+          aria-label={`Ver perfiles de ${selected.name}`}
+          onKeyDown={event => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              handleRegionClick(selected);
+            }
+          }}
         >
           <h3>{selected.name}</h3>
 
@@ -287,7 +318,10 @@ export default function AmazoniaMap() {
             type="button"
             className="ba-region-card-close"
             aria-label="Cerrar información"
-            onClick={() => setActiveRegion(null)}
+            onClick={event => {
+              event.stopPropagation();
+              setActiveRegion(null);
+            }}
           >
             ×
           </button>

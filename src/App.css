@@ -110,10 +110,6 @@
   text-decoration: none;
 }
 
-.ba-outline-button:hover {
-  background: rgba(119, 54, 76, 0.08);
-}
-
 .ba-map-container {
   display: flex;
   min-width: 0;
@@ -176,6 +172,13 @@
   background: #f2dfdc;
   color: #77364c;
   font-size: 25px;
+}
+
+.ba-category-icon img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 .ba-category h3 {
@@ -360,5 +363,33 @@
     color: #77364C;
     font-size: 22px;
     cursor: pointer;
+  }
+}
+
+.ba-outline-button {
+  animation: ba-button-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes ba-button-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(116, 48, 69, 0);
+  }
+
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(116, 48, 69, 0.25);
+  }
+}
+
+@media (max-width: 700px) {
+  .ba-outline-button span {
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+  .ba-outline-button {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
   }
 }
