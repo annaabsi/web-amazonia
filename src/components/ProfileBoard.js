@@ -313,7 +313,7 @@ const filteredProfiles = useMemo(() => {
           </h1>
         </header>
 
-        <section className="filter-panel">
+        {/* <section className="filter-panel">
           <h2>Filtrar autoridades</h2>
 
           <div className="search-section">
@@ -387,7 +387,7 @@ const filteredProfiles = useMemo(() => {
               Limpiar filtros
             </button>
           )}
-        </section>
+        </section> */}
 
         <section className="results-panel">
           <div className="results-heading">

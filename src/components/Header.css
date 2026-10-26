@@ -33,7 +33,7 @@
 
 .header-title {
   margin: 0 0 24px;
-  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-size: clamp(2.8rem, 5vw, 5rem);
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -1px;
@@ -62,7 +62,7 @@
   display: block;
   border-radius: 0;
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.35;
   font-weight: 600;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
@@ -94,7 +94,7 @@
   flex: 0 0 15px;
   width: 15px;
   height: 15px;
-  margin-left: 11px;
+  margin-left: 13px;
   color: #786f6d;
 }
 
@@ -108,7 +108,7 @@
   background: transparent;
   color: #24191b;
   font: inherit;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .ba-search-input::placeholder {
@@ -126,7 +126,7 @@
   background: #77364C;
   color: #fff;
   font: inherit;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   transition: background 150ms ease;

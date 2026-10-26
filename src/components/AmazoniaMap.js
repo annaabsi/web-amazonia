@@ -1,5 +1,4 @@
-
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const REGIONS = {
@@ -111,6 +110,8 @@ export default function AmazoniaMap() {
   const [geoData, setGeoData] = useState(null);
   const [error, setError] = useState(false);
   const [activeRegion, setActiveRegion] = useState(null);
+
+  const pointerTypeRef = useRef('');
 
   useEffect(() => {
     let active = true;
@@ -234,6 +235,9 @@ export default function AmazoniaMap() {
               role="button"
               aria-label={`Ver información de ${region.name}`}
               aria-pressed={isActive}
+              onPointerDown={event => {
+                pointerTypeRef.current = event.pointerType;
+              }}
               onPointerEnter={event => {
                 if (event.pointerType === 'mouse') {
                   setActiveRegion(id);
@@ -241,7 +245,15 @@ export default function AmazoniaMap() {
               }}
               onFocus={() => setActiveRegion(id)}
               onBlur={() => setActiveRegion(null)}
-              onClick={() => handleRegionClick(region)}
+              onClick={() => {
+                if (pointerTypeRef.current === 'touch') {
+                  setActiveRegion(id);
+                } else {
+                  handleRegionClick(region);
+                }
+
+                pointerTypeRef.current = '';
+              }}
               onKeyDown={event => {
                 if (event.key === 'Enter' || event.key === ' ') {
                   event.preventDefault();
@@ -283,22 +295,18 @@ export default function AmazoniaMap() {
       {selected && (
         <aside
           className="ba-region-card"
-          style={{
-            ...selected.cardPosition,
-            cursor: 'pointer',
-          }}
+          style={selected.cardPosition}
           aria-live="polite"
-          onClick={() => handleRegionClick(selected)}
-          role="button"
-          tabIndex={0}
-          aria-label={`Ver perfiles de ${selected.name}`}
-          onKeyDown={event => {
-            if (event.key === 'Enter' || event.key === ' ') {
-              event.preventDefault();
-              handleRegionClick(selected);
-            }
-          }}
         >
+          <button
+            type="button"
+            className="ba-region-card-close"
+            aria-label="Cerrar información"
+            onClick={() => setActiveRegion(null)}
+          >
+            ×
+          </button>
+
           <h3>{selected.name}</h3>
 
           <p>
@@ -316,14 +324,10 @@ export default function AmazoniaMap() {
 
           <button
             type="button"
-            className="ba-region-card-close"
-            aria-label="Cerrar información"
-            onClick={event => {
-              event.stopPropagation();
-              setActiveRegion(null);
-            }}
+            className="ba-region-card-link"
+            onClick={() => handleRegionClick(selected)}
           >
-            ×
+            Ver autoridades
           </button>
         </aside>
       )}

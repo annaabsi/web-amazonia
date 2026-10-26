@@ -101,6 +101,7 @@
 .logo-center {
   display: flex;
   justify-content: center;
+  filter: brightness(0) invert(1);
 }
 
 .logo-center img {
@@ -109,6 +110,10 @@
   object-fit: contain;
   transition: all 0.3s ease;
   transform: scale(1.2);
+}
+
+.custom-header.scrolled .logo-center {
+  filter: none;
 }
 
 .social-right {
