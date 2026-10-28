@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const REGIONS = {
@@ -19,10 +19,7 @@ const REGIONS = {
     coords: [-73.9, -4.5],
     representatives: '05',
     politicalGroups: '04 integrantes de Fuerza Popular y 01 de Juntos por el Perú.',
-    findings: [
-      '09 investigaciones fiscales.',
-      '02 demandas civiles.',
-    ],
+    findings: ['09 investigaciones fiscales.', '02 demandas civiles.'],
     cardPosition: { left: '36%', top: '35%' },
   },
   'SAN MARTIN': {
@@ -50,10 +47,7 @@ const REGIONS = {
     coords: [-70.4, -11.8],
     representatives: '03',
     politicalGroups: 'todos integrantes de Juntos por el Perú.',
-    findings: [
-      '03 investigaciones fiscales.',
-      '01 demanda civil.',
-    ],
+    findings: ['03 investigaciones fiscales.', '01 demanda civil.'],
     cardPosition: { left: '38%', top: '69%' },
   },
 };
@@ -106,22 +100,16 @@ function geometryToPath(geometry, project) {
 
 export default function AmazoniaMap() {
   const navigate = useNavigate();
-
   const [geoData, setGeoData] = useState(null);
   const [error, setError] = useState(false);
   const [activeRegion, setActiveRegion] = useState(null);
-
-  const pointerTypeRef = useRef('');
 
   useEffect(() => {
     let active = true;
 
     fetch('/busca-amazonia/peru_departamental.json')
       .then(response => {
-        if (!response.ok) {
-          throw new Error('No se pudo cargar el GeoJSON');
-        }
-
+        if (!response.ok) throw new Error('No se pudo cargar el GeoJSON');
         return response.json();
       })
       .then(data => {
@@ -129,7 +117,6 @@ export default function AmazoniaMap() {
       })
       .catch(err => {
         console.error('Error cargando el mapa:', err);
-
         if (active) setError(true);
       });
 
@@ -165,17 +152,13 @@ export default function AmazoniaMap() {
     if (!bounds) return null;
 
     const { minLon, maxLon, minLat, maxLat } = bounds;
-
     const scale = Math.min(
       (WIDTH - PADDING * 2) / (maxLon - minLon),
       (HEIGHT - PADDING * 2) / (maxLat - minLat)
     );
 
-    const offsetX =
-      (WIDTH - (maxLon - minLon) * scale) / 2;
-
-    const offsetY =
-      (HEIGHT - (maxLat - minLat) * scale) / 2;
+    const offsetX = (WIDTH - (maxLon - minLon) * scale) / 2;
+    const offsetY = (HEIGHT - (maxLat - minLat) * scale) / 2;
 
     return ([lon, lat]) => [
       offsetX + (lon - minLon) * scale,
@@ -183,33 +166,19 @@ export default function AmazoniaMap() {
     ];
   }, [bounds]);
 
-  if (error) {
-    return <p>No se pudo cargar el mapa de la Amazonía.</p>;
-  }
-
+  if (error) return <p>No se pudo cargar el mapa de la Amazonía.</p>;
   if (!geoData || !project) {
     return <div className="ba-map-loading">Cargando mapa...</div>;
   }
 
-  const handlePointerLeave = event => {
-    if (event.pointerType === 'mouse') {
-      setActiveRegion(null);
-    }
-  };
-
   const selected = activeRegion ? REGIONS[activeRegion] : null;
 
   const handleRegionClick = region => {
-    navigate(
-      `/buscador?departamento=${encodeURIComponent(region.name)}`
-    );
+    navigate(`/buscador?departamento=${encodeURIComponent(region.name)}`);
   };
 
   return (
-    <div
-      className="ba-map-interactive"
-      onPointerLeave={handlePointerLeave}
-    >
+    <div className="ba-map-interactive">
       <svg
         className="ba-map"
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
@@ -234,30 +203,12 @@ export default function AmazoniaMap() {
               tabIndex={0}
               role="button"
               aria-label={`Ver información de ${region.name}`}
-              aria-pressed={isActive}
-              onPointerDown={event => {
-                pointerTypeRef.current = event.pointerType;
-              }}
-              onPointerEnter={event => {
-                if (event.pointerType === 'mouse') {
-                  setActiveRegion(id);
-                }
-              }}
-              onFocus={() => setActiveRegion(id)}
-              onBlur={() => setActiveRegion(null)}
-              onClick={() => {
-                if (pointerTypeRef.current === 'touch') {
-                  setActiveRegion(id);
-                } else {
-                  handleRegionClick(region);
-                }
-
-                pointerTypeRef.current = '';
-              }}
+              onMouseEnter={() => setActiveRegion(id)}
+              onClick={() => setActiveRegion(id)}
               onKeyDown={event => {
                 if (event.key === 'Enter' || event.key === ' ') {
                   event.preventDefault();
-                  handleRegionClick(region);
+                  setActiveRegion(id);
                 }
               }}
             />
@@ -278,7 +229,6 @@ export default function AmazoniaMap() {
                 stroke="#F4E7E2"
                 strokeWidth="1"
               />
-
               <text
                 x={x}
                 y={y - 9}
@@ -308,14 +258,12 @@ export default function AmazoniaMap() {
           </button>
 
           <h3>{selected.name}</h3>
-
           <p>
             Tiene un total de {selected.representatives} representantes
             en el poder legislativo, {selected.politicalGroups}
           </p>
 
           <h4>Hallazgos 2026 - I</h4>
-
           <ul>
             {selected.findings.map(finding => (
               <li key={finding}>{finding}</li>
